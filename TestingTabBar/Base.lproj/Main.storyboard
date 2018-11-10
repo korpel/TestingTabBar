@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qA9-wa-K8V">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="593" y="387"/>
         </scene>
-        <!--Item-->
+        <!--Item 3-->
         <scene sceneID="PfU-Ii-3ZL">
             <objects>
-                <viewController id="GKk-mz-7Po" customClass="ThirdViewController" customModule="TestingTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GKk-mz-7Po" userLabel="Item 3" customClass="ThirdViewController" customModule="TestingTabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="118-Vk-TBs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,17 +55,31 @@
                     <view key="view" contentMode="scaleToFill" id="PaX-30-cuf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jo-30-LCg">
+                                <rect key="frame" x="164" y="187" width="46" height="131"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="0Ga-sv-QXB" eventType="touchUpInside" id="3Go-Wb-yer"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9jo-30-LCg" firstAttribute="centerX" secondItem="PaX-30-cuf" secondAttribute="centerX" id="bnp-qm-eh6"/>
+                            <constraint firstItem="9jo-30-LCg" firstAttribute="centerY" secondItem="PaX-30-cuf" secondAttribute="centerY" id="gK2-yt-44s"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rS0-3Y-k8b"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Ya7-XJ-D2l"/>
                     <connections>
                         <outlet property="initialView" destination="PaX-30-cuf" id="Q6t-7R-KPd"/>
+                        <outlet property="simpleButton" destination="9jo-30-LCg" id="4S3-91-Syi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IgM-M8-vua" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="-279"/>
+            <point key="canvasLocation" x="592.79999999999995" y="-279.31034482758622"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="LmL-tY-Qfi">

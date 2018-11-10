@@ -10,11 +10,31 @@ import UIKit
 
 class FirstViewController: UIViewController {
     @IBOutlet var initialView: UIView!
+    @IBOutlet weak var simpleButton: UIButton!
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        initialView.backgroundColor = getRandomColor()
+        simpleButton.setTitleColor(getRandomColor(), for: .normal)
+        simpleButton.setTitle(String(counter), for: .normal)
+        counter+=1
+    }
+    
+    var counter = 0
+    
+    func getRandomColor() -> UIColor {
+        //Generate between 0 to 1
+        let red:CGFloat = CGFloat(drand48())
+        let green:CGFloat = CGFloat(drand48())
+        let blue:CGFloat = CGFloat(drand48())
+        
+        return UIColor(red:red, green: green, blue: blue, alpha: 1.0)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        initialView.backgroundColor = UIColor.green
+        simpleButton.setTitleColor(getRandomColor(), for: .normal)
     }
     
 
