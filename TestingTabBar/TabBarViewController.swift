@@ -9,13 +9,24 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+        selectedViewController = viewControllers![1]
+        }
     
+    func chooseTheInitialViewController()
+    {
+        var coutner = 1
+        var test : Int {
+            get {
+                return 1
+            }
+        }
+    }
+}
+
 
     /*
     // MARK: - Navigation
@@ -27,4 +38,3 @@ class TabBarViewController: UITabBarController {
     }
     */
 
-}

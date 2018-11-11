@@ -71,7 +71,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rS0-3Y-k8b"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Ya7-XJ-D2l"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" selectedImage="image1" id="Ya7-XJ-D2l"/>
                     <connections>
                         <outlet property="initialView" destination="PaX-30-cuf" id="Q6t-7R-KPd"/>
                         <outlet property="simpleButton" destination="9jo-30-LCg" id="4S3-91-Syi"/>
@@ -101,4 +101,7 @@
             <point key="canvasLocation" x="-357" y="54"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image1" width="246" height="246"/>
+    </resources>
 </document>
