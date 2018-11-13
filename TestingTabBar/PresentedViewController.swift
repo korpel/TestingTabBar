@@ -1,22 +1,19 @@
 //
-//  SecondViewController.swift
+//  PresentedViewController.swift
 //  TestingTabBar
 //
-//  Created by Antonis Vozikis on 10/11/2018.
+//  Created by Antonis Vozikis on 13/11/2018.
 //  Copyright © 2018 Antonis Vozikis. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
-    @IBOutlet var initialView: UIView!
-    
+class PresentedViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarItem.title = "name"
-        initialView.backgroundColor = UIColor.black
+        // Do any additional setup after loading the view.
     }
-    
     
 
     /*

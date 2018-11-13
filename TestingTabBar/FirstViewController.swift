@@ -13,7 +13,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var simpleButton: UIButton!
     @IBOutlet weak var feauturedTabBarItem: UITabBarItem!
     
-    var counter = 0
+    public var counter = 1
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         let backColor = initialView.backgroundColor = getRandomColor()
@@ -23,7 +23,8 @@ class FirstViewController: UIViewController {
         }
         simpleButton.setTitle(String(counter), for: .normal)
         counter*=2
-        feauturedTabBarItem.badgeValue = String(counter*2)
+        self.navigationController?.tabBarItem.badgeValue = String(counter)
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     func getRandomColor() -> UIColor {
