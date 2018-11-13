@@ -48,7 +48,7 @@
             </objects>
             <point key="canvasLocation" x="593" y="1094"/>
         </scene>
-        <!--Item 1-->
+        <!--First View Controller-->
         <scene sceneID="XM7-Ho-qJg">
             <objects>
                 <viewController id="0Ga-sv-QXB" customClass="FirstViewController" customModule="TestingTabBar" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,8 +71,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rS0-3Y-k8b"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" selectedImage="image1" id="Ya7-XJ-D2l"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="Ya7-XJ-D2l">
+                        <color key="badgeColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                     <connections>
+                        <outlet property="feauturedTabBarItem" destination="Ya7-XJ-D2l" id="a5t-pl-iHj"/>
                         <outlet property="initialView" destination="PaX-30-cuf" id="Q6t-7R-KPd"/>
                         <outlet property="simpleButton" destination="9jo-30-LCg" id="4S3-91-Syi"/>
                     </connections>
@@ -152,7 +155,4 @@
             <point key="canvasLocation" x="1409" y="1119"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="image1" width="246" height="246"/>
-    </resources>
 </document>

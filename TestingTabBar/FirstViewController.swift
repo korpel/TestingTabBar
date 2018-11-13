@@ -11,15 +11,20 @@ import UIKit
 class FirstViewController: UIViewController {
     @IBOutlet var initialView: UIView!
     @IBOutlet weak var simpleButton: UIButton!
-    
-    @IBAction func buttonPressed(_ sender: UIButton) {
-        initialView.backgroundColor = getRandomColor()
-        simpleButton.setTitleColor(getRandomColor(), for: .normal)
-        simpleButton.setTitle(String(counter), for: .normal)
-        counter+=1
-    }
+    @IBOutlet weak var feauturedTabBarItem: UITabBarItem!
     
     var counter = 0
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        let backColor = initialView.backgroundColor = getRandomColor()
+        let buttonColor = simpleButton.setTitleColor(getRandomColor(), for: .normal)
+        if backColor == buttonColor{
+            buttonColor
+        }
+        simpleButton.setTitle(String(counter), for: .normal)
+        counter*=2
+        feauturedTabBarItem.badgeValue = String(counter*2)
+    }
     
     func getRandomColor() -> UIColor {
         //Generate between 0 to 1
