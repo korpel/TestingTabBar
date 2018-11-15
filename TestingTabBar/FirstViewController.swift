@@ -51,8 +51,8 @@ class FirstViewController: UIViewController, UIPopoverPresentationControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initialView.backgroundColor = UIColor.green
-        simpleButton.setTitleColor(UIColor.white, for: .normal)
+        //initialView.backgroundColor = UIColor.green
+        //simpleButton.setTitleColor(UIColor.white, for: .normal)
     }
 
     
