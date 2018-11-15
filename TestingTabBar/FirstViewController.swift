@@ -18,14 +18,6 @@ class FirstViewController: UIViewController, UIPopoverPresentationControllerDele
     
     
     @IBAction func popoverButton(_ sender: UIButton) {
-        let controller = ShowablePopoverViewController()
-        controller.modalPresentationStyle = .popover
-        let popController = controller.popoverPresentationController
-        popController?.permittedArrowDirections = .any
-        popController?.delegate = self
-        popController?.sourceRect = (self.popoverButton?.bounds)!
-        popController?.sourceView = self.popoverButton
-        self.present(controller, animated: true, completion: nil)
     }
     @IBAction func buttonPressed(_ sender: UIButton) {
         initialView.backgroundColor = getRandomColor()
@@ -33,7 +25,18 @@ class FirstViewController: UIViewController, UIPopoverPresentationControllerDele
         simpleButton.setTitle(String(counter), for: .normal)
         counter*=2
         self.navigationController?.tabBarItem.badgeValue = String(counter)
-        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "pop" {
+            let popoverViewController = segue.destination
+            popoverViewController.modalPresentationStyle = .popover
+            popoverViewController.presentationController?.delegate = self
+            popoverViewController.popoverPresentationController?.sourceView = popoverButton
+            popoverViewController.popoverPresentationController?.sourceRect  = CGRect(x: 0, y: 0, width: popoverButton.frame.size.width, height: popoverButton.frame.size.height)
+        }
+    }
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.none
     }
     
     func getRandomColor() -> UIColor {
