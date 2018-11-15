@@ -1,32 +1,21 @@
 //
-//  TabViewController.swift
+//  ShowablePopoverViewController.swift
 //  TestingTabBar
 //
-//  Created by Antonis Vozikis on 10/11/2018.
+//  Created by Antonis Vozikis on 14/11/2018.
 //  Copyright © 2018 Antonis Vozikis. All rights reserved.
 //
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
-    
+class ShowablePopoverViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectedViewController = viewControllers![0]
-        }
-    
-    func chooseTheInitialViewController()
-    {
-        var coutner = 1
-        var test : Int {
-            get {
-                return 1
-            }
-        }
-    }
-}
 
+        // Do any additional setup after loading the view.
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -38,3 +27,4 @@ class TabBarViewController: UITabBarController {
     }
     */
 
+}

@@ -8,23 +8,32 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     @IBOutlet var initialView: UIView!
     @IBOutlet weak var simpleButton: UIButton!
     @IBOutlet weak var feauturedTabBarItem: UITabBarItem!
+    @IBOutlet weak var popoverButton: UIButton!
     
     public var counter = 1
     
+    
+    @IBAction func popoverButton(_ sender: UIButton) {
+        let controller = ShowablePopoverViewController()
+        controller.modalPresentationStyle = .popover
+        let popController = controller.popoverPresentationController
+        popController?.permittedArrowDirections = .any
+        popController?.delegate = self
+        popController?.sourceRect = (self.popoverButton?.bounds)!
+        popController?.sourceView = self.popoverButton
+        self.present(controller, animated: true, completion: nil)
+    }
     @IBAction func buttonPressed(_ sender: UIButton) {
-        let backColor = initialView.backgroundColor = getRandomColor()
-        let buttonColor = simpleButton.setTitleColor(getRandomColor(), for: .normal)
-        if backColor == buttonColor{
-            buttonColor
-        }
+        initialView.backgroundColor = getRandomColor()
+        simpleButton.setTitleColor(getRandomColor(), for: .normal)
         simpleButton.setTitle(String(counter), for: .normal)
         counter*=2
         self.navigationController?.tabBarItem.badgeValue = String(counter)
-        self.navigationController?.isNavigationBarHidden = true
+        
     }
     
     func getRandomColor() -> UIColor {
@@ -40,8 +49,9 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         
         initialView.backgroundColor = UIColor.green
-        simpleButton.setTitleColor(getRandomColor(), for: .normal)
+        simpleButton.setTitleColor(UIColor.white, for: .normal)
     }
+
     
 
     /*
