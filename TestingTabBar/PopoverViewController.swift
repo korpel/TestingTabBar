@@ -9,7 +9,14 @@
 import UIKit
 
 class PopoverViewController: UIViewController, UIPopoverPresentationControllerDelegate {
-
+    @IBAction func popoverButtonPressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let optionVc = storyboard.instantiateViewController(withIdentifier: "popoverid")
+        optionVc.modalPresentationStyle = .popover
+        optionVc.popoverPresentationController?.delegate = self
+        self.present(optionVc, animated: true, completion: nil)
+    }
+    
     var something = "asdjklasdjlk"
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,13 +25,6 @@ class PopoverViewController: UIViewController, UIPopoverPresentationControllerDe
     }
     
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "popoverSegue"{
-            let popoverViewController = segue.destination 
-            popoverViewController.modalPresentationStyle = .popover
-            popoverViewController.popoverPresentationController?.delegate = self
-        }
-    }
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return UIModalPresentationStyle.none
     }
