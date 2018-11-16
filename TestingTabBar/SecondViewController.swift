@@ -19,7 +19,7 @@ class SecondViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        self.tabBarItem.badgeValue = "tadam`"
+        self.tabBarItem.badgeValue = "tadam"
     }
     /*
     // MARK: - Navigation
