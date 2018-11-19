@@ -40,11 +40,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-Pw-Nov">
                                 <rect key="frame" x="97" y="110" width="220" height="330"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="0zi-fW-o5c">
+                                <rect key="frame" x="191" y="490" width="32" height="32"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="0zi-fW-o5c" firstAttribute="centerX" secondItem="118-Vk-TBs" secondAttribute="centerX" id="HlM-xG-RiO"/>
                             <constraint firstItem="FYI-Pw-Nov" firstAttribute="centerX" secondItem="118-Vk-TBs" secondAttribute="centerX" id="KIy-ba-R4z"/>
+                            <constraint firstItem="0zi-fW-o5c" firstAttribute="top" secondItem="FYI-Pw-Nov" secondAttribute="bottom" constant="50" id="hoL-tK-9QB"/>
                             <constraint firstItem="FYI-Pw-Nov" firstAttribute="top" secondItem="zSk-hn-4wk" secondAttribute="top" constant="90" id="jJv-9e-jlj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zSk-hn-4wk"/>
@@ -54,6 +59,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="t4g-tb-yUk"/>
                     <connections>
+                        <outlet property="imageMonkey" destination="FYI-Pw-Nov" id="vQv-Cr-wjE"/>
                         <outlet property="initialView" destination="118-Vk-TBs" id="GMp-a9-meH"/>
                     </connections>
                 </viewController>
@@ -318,6 +324,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="image2" width="32" height="32"/>
         <image name="monkey" width="220" height="330"/>
     </resources>
     <inferredMetricsTieBreakers>
