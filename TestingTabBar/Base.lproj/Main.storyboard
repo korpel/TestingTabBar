@@ -37,7 +37,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="zSk-hn-4wk"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6jD-ar-8Vh" appends="YES" id="bbE-pG-MIT"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="t4g-tb-yUk"/>
                     <connections>
@@ -45,8 +49,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKv-Z3-eDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6jD-ar-8Vh"/>
             </objects>
-            <point key="canvasLocation" x="593" y="1094"/>
+            <point key="canvasLocation" x="494" y="1050"/>
         </scene>
         <!--Presented View Controller-->
         <scene sceneID="gMR-B3-yfc">

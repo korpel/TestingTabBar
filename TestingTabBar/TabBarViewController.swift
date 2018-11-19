@@ -13,7 +13,7 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectedViewController = viewControllers![0]
+        selectedViewController = viewControllers![2]
         }
     
     func chooseTheInitialViewController()
