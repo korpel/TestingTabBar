@@ -36,8 +36,17 @@
                     <view key="view" contentMode="scaleToFill" id="118-Vk-TBs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-Pw-Nov">
+                                <rect key="frame" x="97" y="110" width="220" height="330"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="FYI-Pw-Nov" firstAttribute="centerX" secondItem="118-Vk-TBs" secondAttribute="centerX" id="KIy-ba-R4z"/>
+                            <constraint firstItem="FYI-Pw-Nov" firstAttribute="top" secondItem="zSk-hn-4wk" secondAttribute="top" constant="90" id="jJv-9e-jlj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zSk-hn-4wk"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="6jD-ar-8Vh" appends="YES" id="bbE-pG-MIT"/>
@@ -49,7 +58,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKv-Z3-eDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="6jD-ar-8Vh"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6jD-ar-8Vh">
+                    <connections>
+                        <action selector="panHandler:" destination="GKk-mz-7Po" id="g96-dh-Sny"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="494" y="1050"/>
         </scene>
@@ -304,6 +317,9 @@
             <point key="canvasLocation" x="4001" y="313"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="monkey" width="220" height="330"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="f5m-RF-Oet"/>
         <segue reference="vE5-KR-U23"/>

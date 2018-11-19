@@ -9,23 +9,20 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
+    @IBAction func panHandler(_ sender: UIPanGestureRecognizer) {
+        if let translate = sender.view {
+            
+        }
+    }
     
     @IBOutlet var initialView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
-    func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         initialView.backgroundColor = UIColor.red
     }
-    func panHandler(recognizer: UIPanGestureRecognizer) {
-        let translation = recognizer.translation(in: self.initialView)
-        if let view = recognizer.view {
-            
-        }
-        
-    }
+   
     
 
     /*
