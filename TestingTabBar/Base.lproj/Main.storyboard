@@ -61,6 +61,9 @@
                             <constraint firstItem="FYI-Pw-Nov" firstAttribute="top" secondItem="zSk-hn-4wk" secondAttribute="top" constant="90" id="jJv-9e-jlj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zSk-hn-4wk"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6jD-ar-8Vh" appends="YES" id="DbE-CN-c5I"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="t4g-tb-yUk"/>
                     <connections>
