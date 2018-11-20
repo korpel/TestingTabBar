@@ -21,6 +21,16 @@ class ThirdViewController: UIViewController {
         recognizer.setTranslation(CGPoint.zero, in: self.imageMonkey)
         
     }
+    @IBAction func panGestureRecognizerSecondImage(_ sender: Any) {
+        if let recognizer = sender as? UIPanGestureRecognizer {
+            let translation = recognizer.translation(in: self.view)
+            if let view = recognizer.view {
+                view.center = CGPoint(x:view.center.x + translation.x,
+                                      y:view.center.y + translation.y)
+            }
+            recognizer.setTranslation(CGPoint.zero, in: self.view)
+        }
+    }
     
     @IBAction func tap(_ sender: UITapGestureRecognizer) {
         print("tapped")

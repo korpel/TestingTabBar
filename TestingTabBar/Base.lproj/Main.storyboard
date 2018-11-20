@@ -52,6 +52,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="I9P-Nw-3nA" appends="YES" id="K76-va-Hng"/>
+                                    <outletCollection property="gestureRecognizers" destination="M8Y-YR-kcg" appends="YES" id="fga-j6-UfH"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -88,6 +89,11 @@
                 <panGestureRecognizer minimumNumberOfTouches="1" id="6jD-ar-8Vh" userLabel="Monkey Pan Gesture Recognizer">
                     <connections>
                         <action selector="panHandler2:" destination="GKk-mz-7Po" id="TRP-t1-eVk"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="M8Y-YR-kcg">
+                    <connections>
+                        <action selector="panGestureRecognizerSecondImage:" destination="GKk-mz-7Po" id="pmj-kt-YGi"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
