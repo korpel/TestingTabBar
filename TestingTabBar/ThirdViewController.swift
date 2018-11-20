@@ -12,12 +12,12 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var imageMonkey: UIImageView!
     
     @IBAction func panHandler(_ recognizer: UIPanGestureRecognizer) {
-        let translation = recognizer.translation(in: self.view)
+        let translation = recognizer.translation(in: self.imageMonkey)
         if let view = recognizer.view {
             imageMonkey.center = CGPoint(x:imageMonkey.center.x + translation.x,
                                   y:imageMonkey.center.y + translation.y)
         }
-        recognizer.setTranslation(CGPoint.zero, in: self.view)
+        recognizer.setTranslation(CGPoint.zero, in: self.imageMonkey)
 
     }
     
