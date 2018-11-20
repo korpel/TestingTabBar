@@ -41,7 +41,7 @@
                                 <rect key="frame" x="97" y="110" width="220" height="330"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="6jD-ar-8Vh" appends="YES" id="FzH-Xx-t3e"/>
+                                    <outletCollection property="gestureRecognizers" destination="6jD-ar-8Vh" appends="YES" id="GEp-dV-uwp"/>
                                 </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="0zi-fW-o5c">
@@ -61,9 +61,6 @@
                             <constraint firstItem="FYI-Pw-Nov" firstAttribute="top" secondItem="zSk-hn-4wk" secondAttribute="top" constant="90" id="jJv-9e-jlj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zSk-hn-4wk"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="6jD-ar-8Vh" appends="YES" id="bbE-pG-MIT"/>
-                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="t4g-tb-yUk"/>
                     <connections>
@@ -72,12 +69,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKv-Z3-eDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Tcg-Tt-haw"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="6jD-ar-8Vh" userLabel="Monkey Pan Gesture Recognizer">
                     <connections>
-                        <action selector="panHandler:" destination="GKk-mz-7Po" id="g96-dh-Sny"/>
+                        <action selector="panHandler2:" destination="GKk-mz-7Po" id="10a-zO-no3"/>
                     </connections>
                 </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="Tcg-Tt-haw"/>
             </objects>
             <point key="canvasLocation" x="494" y="1050"/>
         </scene>
