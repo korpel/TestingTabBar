@@ -13,16 +13,22 @@ class ThirdViewController: UIViewController {
     
     @IBAction func panHandler2(_ recognizer: UIPanGestureRecognizer) {
         
-        let translation = recognizer.translation(in: self.view)
-        print(translation)
+        let translation = recognizer.translation(in: self.imageMonkey)
         if let view = recognizer.view {
-            view.center = CGPoint(x:self.view.center.x + translation.x,
-                                  y:self.view.center.y + translation.y)
+            imageMonkey.center = CGPoint(x:self.imageMonkey.center.x + translation.x,
+                                  y:self.imageMonkey.center.y + translation.y)
         }
-        recognizer.setTranslation(CGPoint.zero, in: self.view)
+        recognizer.setTranslation(CGPoint.zero, in: self.imageMonkey)
         
     }
-
+    
+    @IBAction func tap(_ sender: UITapGestureRecognizer) {
+        print("tapped")
+    }
+    
+    @IBAction func tap2(_ sender: UITapGestureRecognizer) {
+        print("tapped view")
+    }
     
     @IBOutlet var initialView: UIView!
     override func viewDidLoad() {
