@@ -37,15 +37,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-Pw-Nov">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-Pw-Nov">
                                 <rect key="frame" x="97" y="110" width="220" height="330"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="0zi-fW-o5c">
-                                <rect key="frame" x="191" y="490" width="32" height="32"/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES" adjustable="YES"/>
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6jD-ar-8Vh" appends="YES" id="eOM-Qu-qad"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="0zi-fW-o5c">
+                                <rect key="frame" x="191" y="490" width="32" height="32"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="I9P-Nw-3nA" appends="YES" id="K76-va-Hng"/>
@@ -62,7 +65,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zSk-hn-4wk"/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="6jD-ar-8Vh" appends="YES" id="wBb-1a-A1f"/>
                             <outletCollection property="gestureRecognizers" destination="ySq-Gn-zAq" appends="YES" id="bSW-3q-KhA"/>
                         </connections>
                     </view>
@@ -73,11 +75,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKv-Z3-eDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="6jD-ar-8Vh" userLabel="Monkey Pan Gesture Recognizer">
-                    <connections>
-                        <action selector="panHandler2:" destination="GKk-mz-7Po" id="TRP-t1-eVk"/>
-                    </connections>
-                </panGestureRecognizer>
                 <tapGestureRecognizer id="I9P-Nw-3nA">
                     <connections>
                         <action selector="tap:" destination="GKk-mz-7Po" id="Gen-uf-w2c"/>
@@ -88,6 +85,11 @@
                         <action selector="tap2:" destination="GKk-mz-7Po" id="hy6-M9-W8P"/>
                     </connections>
                 </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6jD-ar-8Vh" userLabel="Monkey Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="panHandler2:" destination="GKk-mz-7Po" id="TRP-t1-eVk"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="494" y="1050"/>
         </scene>
