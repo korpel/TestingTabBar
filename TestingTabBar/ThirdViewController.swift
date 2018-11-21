@@ -12,6 +12,8 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var imageMonkey: UIImageView!
     
     @IBAction func panHandler2(_ recognizer: UIPanGestureRecognizer) {
+        //ama thelw na metakinithei mono mia fora
+        //imageMonkey.isUserInteractionEnabled = false
         
         let translation = recognizer.translation(in: self.view)
         let velocity = recognizer.velocity(in: self.view)
