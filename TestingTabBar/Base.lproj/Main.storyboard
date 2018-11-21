@@ -361,10 +361,10 @@
             </objects>
             <point key="canvasLocation" x="4001" y="313"/>
         </scene>
-        <!--Item-->
+        <!--monkey-->
         <scene sceneID="FGv-zv-TmC">
             <objects>
-                <viewController id="OwL-LQ-elm" customClass="ViewController" customModule="MonkeyPinch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OwL-LQ-elm" userLabel="monkey" customClass="ViewController" customModule="TestingTabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zfY-zV-RDx"/>
                         <viewControllerLayoutGuide type="bottom" id="iMW-St-SaH"/>
@@ -380,6 +380,7 @@
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="tJe-Tq-2gP" appends="YES" id="ZR6-TU-q7E"/>
                                     <outletCollection property="gestureRecognizers" destination="xBC-pS-b5U" appends="YES" id="AKz-Ki-NEi"/>
+                                    <outletCollection property="gestureRecognizers" destination="yJh-sD-ldn" appends="YES" id="UuS-85-Ysl"/>
                                 </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="GdB-nh-Plu">
@@ -404,6 +405,11 @@
                 <pinchGestureRecognizer id="eH9-6m-I4O"/>
                 <rotationGestureRecognizer id="xBC-pS-b5U"/>
                 <rotationGestureRecognizer id="q1J-k8-z73"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="yJh-sD-ldn" userLabel="Monkey Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="HandleMonkeyPan:" destination="OwL-LQ-elm" id="lje-Eb-yeo"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1303" y="1105"/>
         </scene>

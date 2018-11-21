@@ -31,21 +31,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-  
+
+    @IBAction func HandleMonkeyPan(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: self.view)
+    }
+    
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-  }
-  
-  @IBAction func handlePinch(recognizer : UIPinchGestureRecognizer) {
-    
-  }
-  
-  @IBAction func handleRotate(recognizer : UIRotationGestureRecognizer) {
-    
-  }
-  
-  @objc func handleTap(recognizer: UITapGestureRecognizer) {
     
   }
   
