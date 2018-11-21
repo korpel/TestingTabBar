@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ThirdViewController: UIViewController {
     @IBOutlet weak var imageMonkey: UIImageView!
@@ -23,7 +24,13 @@ class ThirdViewController: UIViewController {
         recognizer.setTranslation(CGPoint.zero, in: self.imageMonkey)
         if recognizer.state == .ended {
             let velocity = recognizer.velocity(in: self.view)
-            let magnitude = sqrt((velocity.x) + (velocity.y*velocity.y))
+            let magnitude = sqrt(pow(velocity.x,2) + pow(velocity.y,2))
+            let slideMultiplier = magnitude/200
+            let slideFactor = 0.1*slideMultiplier
+            var finalPoint = CGPoint(x: (recognizer.view!.center.x) + velocity.x*slideFactor, y: recognizer.view!.center.y + velocity.y*slideFactor)
+            finalPoint.x = min(max(finalPoint.x, 0), self.view.bounds.size.width)
+            finalPoint.y = min(max(finalPoint.y, 0), self.view.bounds.size.height)
+            UIView.animate(withDuration: Double(slideFactor*2), delay: 0, options: UIView.AnimationOptions.curveEaseOut, animations: {recognizer.view!.center = finalPoint}, completion: nil)
         }
         
     }
