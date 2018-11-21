@@ -16,13 +16,15 @@ class ThirdViewController: UIViewController {
         //imageMonkey.isUserInteractionEnabled = false
         
         let translation = recognizer.translation(in: self.view)
-        let velocity = recognizer.velocity(in: self.view)
-        print(velocity)
         if let view = recognizer.view {
             imageMonkey.center = CGPoint(x:self.imageMonkey.center.x + translation.x,
                                   y:self.imageMonkey.center.y + translation.y)
         }
         recognizer.setTranslation(CGPoint.zero, in: self.imageMonkey)
+        if recognizer.state == .ended {
+            let velocity = recognizer.velocity(in: self.view)
+            let magnitude = sqrt((velocity.x) + (velocity.y*velocity.y))
+        }
         
     }
     @IBAction func panGestureRecognizerSecondImage(_ sender: Any) {
