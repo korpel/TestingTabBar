@@ -383,7 +383,7 @@
                                     <outletCollection property="gestureRecognizers" destination="yJh-sD-ldn" appends="YES" id="UuS-85-Ysl"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="GdB-nh-Plu">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="GdB-nh-Plu">
                                 <rect key="frame" x="96" y="320" width="175" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -391,6 +391,7 @@
                                     <outletCollection property="gestureRecognizers" destination="Aso-b1-DV5" appends="YES" id="4yg-hf-qYe"/>
                                     <outletCollection property="gestureRecognizers" destination="eH9-6m-I4O" appends="YES" id="04U-1f-9uO"/>
                                     <outletCollection property="gestureRecognizers" destination="q1J-k8-z73" appends="YES" id="fca-8K-aQR"/>
+                                    <outletCollection property="gestureRecognizers" destination="zYj-lC-DpA" appends="YES" id="s42-4h-M0t"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -410,6 +411,11 @@
                         <action selector="HandleMonkeyPan:" destination="OwL-LQ-elm" id="lje-Eb-yeo"/>
                     </connections>
                 </panGestureRecognizer>
+                <tapGestureRecognizer id="zYj-lC-DpA">
+                    <connections>
+                        <action selector="bananaTapHandler:" destination="OwL-LQ-elm" id="x8H-JG-0w4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1303" y="1105"/>
         </scene>

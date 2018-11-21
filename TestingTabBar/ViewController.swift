@@ -40,6 +40,18 @@ class ViewController: UIViewController {
         sender.setTranslation(CGPoint.zero, in: self.view)
         
     }
+    @IBAction func bananaTapHandler(_ sender: UITapGestureRecognizer) {
+        print("tapped")
+        let state = sender.state
+        if  state == .ended {
+            let animator = UIViewPropertyAnimator(duration: 0.2, curve: .easeInOut, animations: {
+                    sender.view?.center.x += 100
+                    sender.view?.center.y += 100
+            })
+            animator.startAnimation()
+            //TODO NA TO FTIAKSW ETSI WSTE NA MHN FEUGEI EKTOS BOUNDS 
+        }
+    }
     
   override func viewDidLoad() {
     super.viewDidLoad()
