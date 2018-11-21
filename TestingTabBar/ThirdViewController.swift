@@ -18,10 +18,10 @@ class ThirdViewController: UIViewController {
         
         let translation = recognizer.translation(in: self.view)
         if let view = recognizer.view {
-            imageMonkey.center = CGPoint(x:self.imageMonkey.center.x + translation.x,
-                                  y:self.imageMonkey.center.y + translation.y)
+            imageMonkey.center = CGPoint(x:view.center.x + translation.x,
+                                  y:view.center.y + translation.y)
         }
-        recognizer.setTranslation(CGPoint.zero, in: self.imageMonkey)
+        recognizer.setTranslation(CGPoint.zero, in: self.view)
         if recognizer.state == .ended {
             let velocity = recognizer.velocity(in: self.view)
             let magnitude = sqrt(pow(velocity.x,2) + pow(velocity.y,2))
