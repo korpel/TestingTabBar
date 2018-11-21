@@ -51,8 +51,8 @@
                                     <outletCollection property="gestureRecognizers" destination="6jD-ar-8Vh" appends="YES" id="eOM-Qu-qad"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="0zi-fW-o5c">
-                                <rect key="frame" x="202" y="328" width="67" height="257"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="0zi-fW-o5c">
+                                <rect key="frame" x="191" y="490" width="32" height="32"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
@@ -80,7 +80,7 @@
                             <outletCollection property="gestureRecognizers" destination="ySq-Gn-zAq" appends="YES" id="bSW-3q-KhA"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="t4g-tb-yUk"/>
+                    <tabBarItem key="tabBarItem" title="DoubleImages" id="t4g-tb-yUk"/>
                     <connections>
                         <outlet property="imageMonkey" destination="FYI-Pw-Nov" id="vQv-Cr-wjE"/>
                         <outlet property="initialView" destination="118-Vk-TBs" id="GMp-a9-meH"/>
@@ -263,12 +263,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="qWa-Bb-gou" kind="relationship" relationship="viewControllers" id="g5W-or-ZgP"/>
+                        <segue destination="OwL-LQ-elm" kind="relationship" relationship="viewControllers" id="4FX-9Y-BWh"/>
                         <segue destination="ZAd-3h-Yko" kind="relationship" relationship="viewControllers" id="JnF-0w-o1n"/>
-                        <segue destination="GKk-mz-7Po" kind="relationship" relationship="viewControllers" id="2Ag-Cr-96G"/>
                         <segue destination="IVY-Lg-soI" kind="relationship" relationship="viewControllers" id="xBz-qm-Q2r"/>
+                        <segue destination="GKk-mz-7Po" kind="relationship" relationship="viewControllers" id="2Ag-Cr-96G"/>
                         <segue destination="85M-hr-YEU" kind="relationship" relationship="viewControllers" id="KhZ-fV-FR4"/>
                         <segue destination="yFt-Mb-9Bb" kind="relationship" relationship="viewControllers" id="QUw-Xv-ls0"/>
-                        <segue destination="OwL-LQ-elm" kind="relationship" relationship="viewControllers" id="4FX-9Y-BWh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQw-Dg-TCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -373,7 +373,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="h5h-Gs-OI1">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="h5h-Gs-OI1">
                                 <rect key="frame" x="103" y="144" width="168" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -397,7 +397,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Grq-Pt-oYf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="udt-ee-Umi"/>
+                    <tabBarItem key="tabBarItem" title="Monkey" id="udt-ee-Umi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnS-tH-3l7" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Aso-b1-DV5"/>
