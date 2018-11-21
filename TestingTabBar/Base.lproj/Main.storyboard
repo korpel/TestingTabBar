@@ -37,6 +37,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uY-B5-mFm">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-Pw-Nov">
                                 <rect key="frame" x="97" y="110" width="220" height="330"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -59,10 +63,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="zSk-hn-4wk" firstAttribute="trailing" secondItem="1uY-B5-mFm" secondAttribute="trailing" id="4H0-bp-9u6"/>
                             <constraint firstItem="0zi-fW-o5c" firstAttribute="centerX" secondItem="118-Vk-TBs" secondAttribute="centerX" id="HlM-xG-RiO"/>
                             <constraint firstItem="FYI-Pw-Nov" firstAttribute="centerX" secondItem="118-Vk-TBs" secondAttribute="centerX" id="KIy-ba-R4z"/>
+                            <constraint firstItem="1uY-B5-mFm" firstAttribute="leading" secondItem="zSk-hn-4wk" secondAttribute="leading" id="OVh-Ir-wIN"/>
+                            <constraint firstAttribute="bottom" secondItem="1uY-B5-mFm" secondAttribute="bottom" id="cpM-wt-5D0"/>
                             <constraint firstItem="0zi-fW-o5c" firstAttribute="top" secondItem="FYI-Pw-Nov" secondAttribute="bottom" constant="50" id="hoL-tK-9QB"/>
                             <constraint firstItem="FYI-Pw-Nov" firstAttribute="top" secondItem="zSk-hn-4wk" secondAttribute="top" constant="90" id="jJv-9e-jlj"/>
+                            <constraint firstItem="1uY-B5-mFm" firstAttribute="top" secondItem="zSk-hn-4wk" secondAttribute="top" id="skY-g1-fvZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zSk-hn-4wk"/>
                         <connections>
