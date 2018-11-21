@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "monkey.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "monkey@2x.png",
+      "filename" : "Razewarelogo_1024.png",
       "scale" : "2x"
     },
     {

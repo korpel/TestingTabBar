@@ -41,7 +41,7 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-Pw-Nov">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey2" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-Pw-Nov">
                                 <rect key="frame" x="97" y="110" width="220" height="330"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
@@ -51,8 +51,11 @@
                                     <outletCollection property="gestureRecognizers" destination="6jD-ar-8Vh" appends="YES" id="eOM-Qu-qad"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="0zi-fW-o5c">
-                                <rect key="frame" x="191" y="490" width="32" height="32"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="0zi-fW-o5c">
+                                <rect key="frame" x="202" y="328" width="67" height="257"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="I9P-Nw-3nA" appends="YES" id="K76-va-Hng"/>
@@ -105,7 +108,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="494" y="1050"/>
+            <point key="canvasLocation" x="492.75362318840581" y="1050"/>
         </scene>
         <!--Presented View Controller-->
         <scene sceneID="gMR-B3-yfc">
@@ -265,6 +268,7 @@
                         <segue destination="IVY-Lg-soI" kind="relationship" relationship="viewControllers" id="xBz-qm-Q2r"/>
                         <segue destination="85M-hr-YEU" kind="relationship" relationship="viewControllers" id="KhZ-fV-FR4"/>
                         <segue destination="yFt-Mb-9Bb" kind="relationship" relationship="viewControllers" id="QUw-Xv-ls0"/>
+                        <segue destination="OwL-LQ-elm" kind="relationship" relationship="viewControllers" id="4FX-9Y-BWh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQw-Dg-TCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -357,10 +361,58 @@
             </objects>
             <point key="canvasLocation" x="4001" y="313"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="FGv-zv-TmC">
+            <objects>
+                <viewController id="OwL-LQ-elm" customClass="ViewController" customModule="MonkeyPinch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zfY-zV-RDx"/>
+                        <viewControllerLayoutGuide type="bottom" id="iMW-St-SaH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ej4-3X-dux">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="h5h-Gs-OI1">
+                                <rect key="frame" x="103" y="144" width="168" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tJe-Tq-2gP" appends="YES" id="ZR6-TU-q7E"/>
+                                    <outletCollection property="gestureRecognizers" destination="xBC-pS-b5U" appends="YES" id="AKz-Ki-NEi"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="GdB-nh-Plu">
+                                <rect key="frame" x="96" y="320" width="175" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Aso-b1-DV5" appends="YES" id="4yg-hf-qYe"/>
+                                    <outletCollection property="gestureRecognizers" destination="eH9-6m-I4O" appends="YES" id="04U-1f-9uO"/>
+                                    <outletCollection property="gestureRecognizers" destination="q1J-k8-z73" appends="YES" id="fca-8K-aQR"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Grq-Pt-oYf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="udt-ee-Umi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JnS-tH-3l7" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Aso-b1-DV5"/>
+                <pinchGestureRecognizer id="tJe-Tq-2gP"/>
+                <pinchGestureRecognizer id="eH9-6m-I4O"/>
+                <rotationGestureRecognizer id="xBC-pS-b5U"/>
+                <rotationGestureRecognizer id="q1J-k8-z73"/>
+            </objects>
+            <point key="canvasLocation" x="1303" y="1105"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="banana" width="175" height="175"/>
         <image name="image2" width="32" height="32"/>
-        <image name="monkey" width="220" height="330"/>
+        <image name="monkey" width="168" height="168"/>
+        <image name="monkey2" width="220" height="330"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="f5m-RF-Oet"/>

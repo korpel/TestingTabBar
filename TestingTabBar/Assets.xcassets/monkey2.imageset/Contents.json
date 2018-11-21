@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "monkey.png",
+      "filename" : "220px-Macaca_sinica_-_01.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "monkey@2x.png",
       "scale" : "2x"
     },
     {
