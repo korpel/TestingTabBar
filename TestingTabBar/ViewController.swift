@@ -104,20 +104,24 @@ class ViewController: UIViewController {
             
         }
     }
-    func loadSound() {
+    var chompPlayer:AVAudioPlayer? = nil
+    func loadSound() -> AVAudioPlayer {
         var player = AVAudioPlayer()
-        let url = URL(fileURLWithPath: "~/Users/antonisvozikis/Downloads/Starter Project/MonkeyPinch/MonkeyPinch/hahaha1.caf")
+        let url = URL(fileURLWithPath: "/Users/antonisvozikis/Downloads/Starter Project/MonkeyPinch/MonkeyPinch/hehehe1.caf")
         do {
             try player = AVAudioPlayer(contentsOf:url )
             player.prepareToPlay()
+            player.volume = 1.0
         } catch {
             print("Error loading")
         }
+        return player
+        
     }
     
   override func viewDidLoad() {
     super.viewDidLoad()
-    loadSound()
+    chompPlayer = loadSound()
   }
   
 }
