@@ -45,9 +45,9 @@ class ViewController: UIViewController {
             let slideMultiplier = magnitude/200
             let slideFactor = slideMultiplier*0.1
             var finalPoint = CGPoint(x: sender.view!.center.x + (velocity.x*slideFactor), y: sender.view!.center.y+(velocity.y*slideFactor))
-            finalPoint = min(max(finalPoint.x, 0), self.view.bounds.size.width)
-            finalPoint = min(max(finalPoint.y, 0), self.view.bounds.size.height)
-            
+            finalPoint.x = min(max(finalPoint.x, 0), self.view.bounds.size.width)
+            finalPoint.y = min(max(finalPoint.y, 0), self.view.bounds.size.height)
+            UIView.animate(withDuration: Double(slideFactor*2), delay: 0, options: UIView.AnimationOptions.curveEaseInOut , animations: {sender.view!.center = finalPoint}, completion: nil)
         }
 
         
