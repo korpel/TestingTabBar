@@ -45,22 +45,30 @@ class ViewController: UIViewController {
             let slideMultiplier = magnitude/200
             let slideFactor = slideMultiplier*0.1
             var finalPoint = CGPoint(x: sender.view!.center.x + (velocity.x*slideFactor), y: sender.view!.center.y+(velocity.y*slideFactor))
-            finalPoint.x = min(max(finalPoint.x, 0), self.view.bounds.size.width/2)
-            finalPoint.y = min(max(finalPoint.y, 0), self.view.bounds.size.height/2)
+            finalPoint.x = min(max(finalPoint.x, 0), self.view.bounds.size.width)
+            finalPoint.y = min(max(finalPoint.y, 0), self.view.bounds.size.height)
             UIView.animate(withDuration: Double(slideFactor*2), delay: 0, options: UIView.AnimationOptions.curveEaseInOut , animations: {sender.view!.center = finalPoint}, completion: nil)
         }
 
         
     }
     @IBAction func bananaTapHandler(_ sender: UITapGestureRecognizer) {
-        print("tapped")
+        print("H mpanana einai sth thesi x: \(sender.view!.center.x) y: \(sender.view!.center.y)")
+        print("Ta bounds tou view einai sthn thesi x: \(self.view.bounds.size.width) kai y : \(self.view.bounds.size.height)")
         let state = sender.state
         if  state == .ended {
             let animator = UIViewPropertyAnimator(duration: 0.2, curve: .easeInOut, animations: {
                     sender.view?.center.x += 100
                     sender.view?.center.y += 100
+                if sender.view!.center.x > self.view.bounds.size.width && sender.view!.center.y > self.view.bounds.size.height {
+                    print("ektos")
+                }
             })
             animator.startAnimation()
+            //TODO FIX THE BANANA FROM GETTING OUT OF BOUNDS WHEN TAPPED
+            
+
+            
         }
     }
     
