@@ -62,6 +62,10 @@ class ViewController: UIViewController {
                     sender.view?.center.y += 100
                 if sender.view!.center.x + sender.view!.bounds.maxX/2 > self.view.bounds.size.width && sender.view!.center.y + sender.view!.bounds.maxY/2 > self.view.bounds.size.height {
                     print("ektos")
+                    UIView.animate(withDuration: 2, animations: {
+                        sender.view!.center.x = self.view.center.x
+                        sender.view!.center.y = self.view.center.y
+                    })
                 }
             })
             animator.startAnimation()
