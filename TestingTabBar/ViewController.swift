@@ -43,6 +43,10 @@ class ViewController: UIViewController {
             let velocity = sender.velocity(in: self.view)
             let magnitude = sqrt((velocity.x*velocity.x)+(velocity.y*velocity.y))
             let slideMultiplier = magnitude/200
+            let slideFactor = slideMultiplier*0.1
+            var finalPoint = CGPoint(x: sender.view!.center.x + (velocity.x*slideFactor), y: sender.view!.center.y+(velocity.y*slideFactor))
+            finalPoint = min(max(finalPoint.x, 0), self.view.bounds.size.width)
+            finalPoint = min(max(finalPoint.y, 0), self.view.bounds.size.height)
             
         }
 
