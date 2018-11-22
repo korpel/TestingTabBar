@@ -412,8 +412,16 @@
                         <action selector="pinchBanana:" destination="OwL-LQ-elm" id="SWy-8u-gs8"/>
                     </connections>
                 </pinchGestureRecognizer>
-                <rotationGestureRecognizer id="xBC-pS-b5U"/>
-                <rotationGestureRecognizer id="q1J-k8-z73"/>
+                <rotationGestureRecognizer id="xBC-pS-b5U">
+                    <connections>
+                        <action selector="rotateMonkey:" destination="OwL-LQ-elm" id="1ft-Tq-70o"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <rotationGestureRecognizer id="q1J-k8-z73">
+                    <connections>
+                        <action selector="rotateBanana:" destination="OwL-LQ-elm" id="kgK-v1-00C"/>
+                    </connections>
+                </rotationGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="yJh-sD-ldn" userLabel="Monkey Pan Gesture Recognizer">
                     <connections>
                         <action selector="HandleMonkeyPan:" destination="OwL-LQ-elm" id="lje-Eb-yeo"/>

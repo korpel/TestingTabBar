@@ -40,6 +40,19 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func rotateMonkey(_ sender: UIRotationGestureRecognizer) {
+        if let view = sender.view {
+            view.transform = view.transform.rotated(by: sender.rotation)
+            sender.rotation = 0
+        }
+    }
+
+    @IBAction func rotateBanana(_ sender: UIRotationGestureRecognizer) {
+        if let view = sender.view {
+            view.transform = view.transform.rotated(by: sender.rotation)
+            sender.rotation = 0
+        }
+    }
     
     @IBAction func pinchBanana(_ sender: UIPinchGestureRecognizer) {
         if let view = sender.view {
