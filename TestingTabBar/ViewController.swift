@@ -60,7 +60,7 @@ class ViewController: UIViewController {
             let animator = UIViewPropertyAnimator(duration: 0.2, curve: .easeInOut, animations: {
                     sender.view?.center.x += 100
                     sender.view?.center.y += 100
-                if sender.view!.center.x > self.view.bounds.size.width && sender.view!.center.y > self.view.bounds.size.height {
+                if sender.view!.center.x + sender.view!.bounds.maxX/2 > self.view.bounds.size.width && sender.view!.center.y + sender.view!.bounds.maxY/2 > self.view.bounds.size.height {
                     print("ektos")
                 }
             })
