@@ -36,8 +36,16 @@ class ViewController: UIViewController {
         let translation = sender.translation(in: self.view)
         if let view = sender.view {
             view.center = CGPoint(x: view.center.x + translation.x, y: view.center.y + translation.y)
+            
         }
         sender.setTranslation(CGPoint.zero, in: self.view)
+        if sender.state == .ended {
+            let velocity = sender.velocity(in: self.view)
+            let magnitude = sqrt((velocity.x*velocity.x)+(velocity.y*velocity.y))
+            let slideMultiplier = magnitude/200
+            
+        }
+
         
     }
     @IBAction func bananaTapHandler(_ sender: UITapGestureRecognizer) {
@@ -49,7 +57,6 @@ class ViewController: UIViewController {
                     sender.view?.center.y += 100
             })
             animator.startAnimation()
-            //TODO NA TO FTIAKSW ETSI WSTE NA MHN FEUGEI EKTOS BOUNDS 
         }
     }
     
