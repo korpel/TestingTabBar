@@ -31,7 +31,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBAction func pinchMonkey(_ sender: UIPinchGestureRecognizer) {
+        if let view = sender.view {
+            view.transform = view.transform.scaledBy(x: sender.scale, y: sender.scale)
+            sender.scale = 1
+        }
+    }
+    
+    
+    @IBAction func pinchBanana(_ sender: UIPinchGestureRecognizer) {
+        if let view = sender.view {
+            view.transform = view.transform.scaledBy(x: sender.scale, y: sender.scale)
+            sender.scale = 1
+        }
+    }
+    
     @IBAction func HandleMonkeyPan(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: self.view)
         if let view = sender.view {
@@ -69,7 +85,6 @@ class ViewController: UIViewController {
                 }
             })
             animator.startAnimation()
-            //TODO FIX THE BANANA FROM GETTING OUT OF BOUNDS WHEN TAPPED
             
 
             

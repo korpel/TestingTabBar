@@ -402,8 +402,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JnS-tH-3l7" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Aso-b1-DV5"/>
-                <pinchGestureRecognizer id="tJe-Tq-2gP"/>
-                <pinchGestureRecognizer id="eH9-6m-I4O"/>
+                <pinchGestureRecognizer id="tJe-Tq-2gP">
+                    <connections>
+                        <action selector="pinchMonkey:" destination="OwL-LQ-elm" id="AFe-x1-jBu"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="eH9-6m-I4O">
+                    <connections>
+                        <action selector="pinchBanana:" destination="OwL-LQ-elm" id="SWy-8u-gs8"/>
+                    </connections>
+                </pinchGestureRecognizer>
                 <rotationGestureRecognizer id="xBC-pS-b5U"/>
                 <rotationGestureRecognizer id="q1J-k8-z73"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="yJh-sD-ldn" userLabel="Monkey Pan Gesture Recognizer">
