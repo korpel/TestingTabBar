@@ -123,6 +123,10 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
   }
+    override func viewDidAppear(_ animated: Bool) {
+        chompPlayer = loadSound()
+        chompPlayer?.play()
+    }
   
     /* paizei ixo otan allazoun ta layouts
      override func viewDidLayoutSubviews() {
