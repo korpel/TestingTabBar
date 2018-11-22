@@ -121,7 +121,12 @@ class ViewController: UIViewController {
     
   override func viewDidLoad() {
     super.viewDidLoad()
-    chompPlayer = loadSound()
+    
   }
   
+    /* paizei ixo otan allazoun ta layouts
+     override func viewDidLayoutSubviews() {
+        chompPlayer = loadSound()
+        chompPlayer?.play()    }
+ */
 }
