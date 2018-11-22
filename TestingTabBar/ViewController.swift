@@ -29,6 +29,7 @@
  */
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -103,10 +104,20 @@ class ViewController: UIViewController {
             
         }
     }
+    func loadSound() {
+        var player = AVAudioPlayer()
+        let url = URL(fileURLWithPath: "~/Users/antonisvozikis/Downloads/Starter Project/MonkeyPinch/MonkeyPinch/hahaha1.caf")
+        do {
+            try player = AVAudioPlayer(contentsOf:url )
+            player.prepareToPlay()
+        } catch {
+            print("Error loading")
+        }
+    }
     
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    loadSound()
   }
   
 }
