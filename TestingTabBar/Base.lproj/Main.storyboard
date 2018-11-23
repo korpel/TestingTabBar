@@ -10,6 +10,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="dCp-bX-g6D">
+            <objects>
+                <viewController id="GrW-CJ-dQv" customClass="LatestViewController" customModule="TestingTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HEh-ak-Paw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kd2-KO-Ywh">
+                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SRN-ub-MHm" firstAttribute="trailing" secondItem="kd2-KO-Ywh" secondAttribute="trailing" id="0PC-ED-FbX"/>
+                            <constraint firstItem="kd2-KO-Ywh" firstAttribute="top" secondItem="SRN-ub-MHm" secondAttribute="top" id="Lm2-sG-ZRZ"/>
+                            <constraint firstItem="kd2-KO-Ywh" firstAttribute="leading" secondItem="SRN-ub-MHm" secondAttribute="leading" id="fAo-xV-lQu"/>
+                            <constraint firstItem="SRN-ub-MHm" firstAttribute="bottom" secondItem="kd2-KO-Ywh" secondAttribute="bottom" id="hnf-8u-cpB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SRN-ub-MHm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="JUw-zr-UIO"/>
+                    <connections>
+                        <outlet property="tableView" destination="kd2-KO-Ywh" id="Z5A-qT-d8t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86V-26-WTE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="1047"/>
+        </scene>
         <!--Item 3-->
         <scene sceneID="PfU-Ii-3ZL">
             <objects>
@@ -231,6 +262,7 @@
                         <segue destination="OwL-LQ-elm" kind="relationship" relationship="viewControllers" id="4FX-9Y-BWh"/>
                         <segue destination="GKk-mz-7Po" kind="relationship" relationship="viewControllers" id="2Ag-Cr-96G"/>
                         <segue destination="1e7-gj-Rt7" kind="relationship" relationship="viewControllers" id="g8L-Ph-TpJ"/>
+                        <segue destination="GrW-CJ-dQv" kind="relationship" relationship="viewControllers" id="Jg9-LL-wjO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQw-Dg-TCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
