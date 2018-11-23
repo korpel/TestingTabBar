@@ -12,6 +12,8 @@
 		AA2F68BD219A9DA70096093E /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2F68BC219A9DA70096093E /* PresentedViewController.swift */; };
 		AA3DD33721A575320067841E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3DD33621A575310067841E /* ViewController.swift */; };
 		AAB40F5B21A83FE200AE8CE0 /* TheTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB40F5A21A83FE200AE8CE0 /* TheTableViewController.swift */; };
+		AAB40F5D21A84A4C00AE8CE0 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB40F5C21A84A4C00AE8CE0 /* Workout.swift */; };
+		AAB40F5F21A84A7B00AE8CE0 /* WorkoutDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB40F5E21A84A7B00AE8CE0 /* WorkoutDataSource.swift */; };
 		FA3584C221986DE200890635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3584C121986DE200890635 /* Assets.xcassets */; };
 		FAAD8DB421970BFD00FDBE36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD8DB321970BFD00FDBE36 /* AppDelegate.swift */; };
 		FAAD8DB921970BFD00FDBE36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD8DB721970BFD00FDBE36 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		AA2F68BC219A9DA70096093E /* PresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
 		AA3DD33621A575310067841E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAB40F5A21A83FE200AE8CE0 /* TheTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTableViewController.swift; sourceTree = "<group>"; };
+		AAB40F5C21A84A4C00AE8CE0 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		AAB40F5E21A84A7B00AE8CE0 /* WorkoutDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDataSource.swift; sourceTree = "<group>"; };
 		FA3584C121986DE200890635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAAD8DB021970BFD00FDBE36 /* TestingTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAD8DB321970BFD00FDBE36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				FAAD8DD12197309100FDBE36 /* ThirdViewController.swift */,
 				FAAD8DD3219730AA00FDBE36 /* TabBarViewController.swift */,
 				AA3DD33621A575310067841E /* ViewController.swift */,
+				AAB40F5C21A84A4C00AE8CE0 /* Workout.swift */,
+				AAB40F5E21A84A7B00AE8CE0 /* WorkoutDataSource.swift */,
 				FA3584C121986DE200890635 /* Assets.xcassets */,
 				FAAD8DBC21970BFF00FDBE36 /* LaunchScreen.storyboard */,
 				FAAD8DBF21970BFF00FDBE36 /* Info.plist */,
@@ -159,12 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAB40F5F21A84A7B00AE8CE0 /* WorkoutDataSource.swift in Sources */,
 				FAAD8DD02197308900FDBE36 /* SecondViewController.swift in Sources */,
 				AAB40F5B21A83FE200AE8CE0 /* TheTableViewController.swift in Sources */,
 				FAAD8DB421970BFD00FDBE36 /* AppDelegate.swift in Sources */,
 				AA126600219C65FB001A4B13 /* PopoverViewController.swift in Sources */,
 				AA3DD33721A575320067841E /* ViewController.swift in Sources */,
 				FAAD8DD22197309100FDBE36 /* ThirdViewController.swift in Sources */,
+				AAB40F5D21A84A4C00AE8CE0 /* Workout.swift in Sources */,
 				FAAD8DD4219730AA00FDBE36 /* TabBarViewController.swift in Sources */,
 				AA126602219C725A001A4B13 /* ShowablePopoverViewController.swift in Sources */,
 				FAAD8DCE2197308200FDBE36 /* FirstViewController.swift in Sources */,
