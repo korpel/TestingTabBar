@@ -8,6 +8,16 @@
 
 import UIKit
 
+
+struct Headline {
+    
+    var id : Int
+    var title : String
+    var text : String
+    var image : String
+    
+}
+
 class TheTableViewController: UITableViewController {
 
     override func viewDidLoad() {
