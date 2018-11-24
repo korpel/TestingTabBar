@@ -56,6 +56,10 @@ class LatestViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let editAction = UIContextualAction(style: .normal, title: "Edit", handler: {(ac: UIContextualAction, view: UIView, success: (Bool)-> Void) in
             success(true)
+            self.animals.append("my name")
+            print(self.animals)
+            self.tableView.setNeedsDisplay()
+            
         })
         return UISwipeActionsConfiguration(actions: [editAction])
     }
