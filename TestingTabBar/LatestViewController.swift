@@ -63,6 +63,11 @@ class LatestViewController: UIViewController, UITableViewDataSource, UITableView
             print(self.animals)
             self.tableView.setNeedsDisplay()
             self.view.setNeedsDisplay()
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
 
         })
         return UISwipeActionsConfiguration(actions: [editAction])
