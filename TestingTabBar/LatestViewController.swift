@@ -38,6 +38,9 @@ class LatestViewController: UIViewController, UITableViewDataSource, UITableView
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return self.animals.count
         }
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        print("you tapped cell number \(indexPath.row)")
+    }
         
         // create a cell for each table view row
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
