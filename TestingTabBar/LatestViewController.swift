@@ -13,7 +13,7 @@ class LatestViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
         // Data model: These strings will be the data for the table view cells
-        let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
+        var animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
         
         // cell reuse id (cells that scroll out of view can be reused)
         let cellReuseIdentifier = "cell"
@@ -38,9 +38,6 @@ class LatestViewController: UIViewController, UITableViewDataSource, UITableView
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return self.animals.count
         }
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        print("you tapped cell number \(indexPath.row)")
-    }
         
         // create a cell for each table view row
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,5 +55,15 @@ class LatestViewController: UIViewController, UITableViewDataSource, UITableView
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             print("You tapped cell number \(indexPath.row).")
         }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            animals.remove(at: indexPath.row)
+            tableView.deleteRows(at:[indexPath], with: .fade)
+        }
+        else if editingStyle == .insert{
+            
+        }
+    }
     
 }
