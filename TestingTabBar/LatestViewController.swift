@@ -14,6 +14,7 @@ class LatestViewController: UIViewController, UITableViewDataSource, UITableView
     
         // Data model: These strings will be the data for the table view cells
         var animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
+        var refresh: UIRefreshControl?
         
         // cell reuse id (cells that scroll out of view can be reused)
         let cellReuseIdentifier = "cell"
@@ -59,6 +60,11 @@ class LatestViewController: UIViewController, UITableViewDataSource, UITableView
             self.animals.append("my name")
             print(self.animals)
             self.tableView.setNeedsDisplay()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.refresh?.endRefreshing()
+                
+            }
             
         })
         return UISwipeActionsConfiguration(actions: [editAction])
