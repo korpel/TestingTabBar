@@ -15,12 +15,14 @@ class LatestViewController: UIViewController, UITableViewDataSource, UITableView
         // Data model: These strings will be the data for the table view cells
         var animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
     
-        
+        private let refreshControl = UIRefreshControl()
         // cell reuse id (cells that scroll out of view can be reused)
         let cellReuseIdentifier = "cell"
         
         // don't forget to hook this up from the storyboard
-        
+    
+    
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             
@@ -61,6 +63,7 @@ class LatestViewController: UIViewController, UITableViewDataSource, UITableView
             print(self.animals)
             self.tableView.setNeedsDisplay()
             self.view.setNeedsDisplay()
+
         })
         return UISwipeActionsConfiguration(actions: [editAction])
     }
