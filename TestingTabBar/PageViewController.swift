@@ -14,7 +14,8 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
         return [
             self.getViewController(withIdentifier: "firstViewControllerID"),
             self.getViewController(withIdentifier: "secondViewControllerID"),
-            self.getViewController(withIdentifier: "thirdViewControllerID")
+            self.getViewController(withIdentifier: "thirdViewControllerID"),
+            self.getViewController(withIdentifier: "differentViewController")
             
         ]
     }()
@@ -37,6 +38,7 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        
         guard let viewControllerIndex = pages.index(of: viewController) else { return nil }
         
         let nextIndex = viewControllerIndex + 1
@@ -53,8 +55,8 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       // dataSource = self
-       // delegate = self
+       self.dataSource = self
+       delegate = self
         if let firstVC = pages.first {
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
         }
