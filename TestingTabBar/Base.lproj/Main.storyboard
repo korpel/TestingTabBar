@@ -313,10 +313,30 @@
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" title="wht" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="APw-nf-oho" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="XhJ-Gh-gpC"/>
+                    <connections>
+                        <segue destination="paF-Jo-t2m" kind="show" id="Xqd-Ew-cgc"/>
+                        <segue destination="OMM-Kp-5M4" kind="show" id="naD-fR-Yjr"/>
+                        <segue destination="Uj4-e6-VgQ" kind="show" id="iol-d0-0DH"/>
+                    </connections>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KkR-Nv-wnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260.8695652173915" y="381.52173913043481"/>
+            <point key="canvasLocation" x="3154" y="382"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yxB-zR-iAD">
+            <objects>
+                <viewController id="OMM-Kp-5M4" sceneMemberID="viewController">
+                    <view key="view" alpha="0.40000000000000002" contentMode="scaleToFill" id="P0U-C4-Op6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                        <viewLayoutGuide key="safeArea" id="b9r-bq-BVz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZdR-AE-e8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3155" y="1105"/>
         </scene>
         <!--theNavController-->
         <scene sceneID="Tmh-2c-4Lt">
@@ -465,6 +485,36 @@
             </objects>
             <point key="canvasLocation" x="1353.6231884057972" y="381.52173913043481"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="FE0-0P-xlx">
+            <objects>
+                <viewController id="paF-Jo-t2m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AcU-YH-EQw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.13267296880000001" blue="0.80790788869999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="VGs-ZE-wrI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNi-Pm-41W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2261" y="1105"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="y3v-Ax-O2q">
+            <objects>
+                <viewController id="Uj4-e6-VgQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rf5-zP-dh9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ipI-s9-MHe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJh-He-t4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3996" y="1105"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banana" width="175" height="175"/>
@@ -473,7 +523,7 @@
         <image name="monkey2" width="220" height="330"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bjx-S0-rsA"/>
+        <segue reference="f5m-RF-Oet"/>
         <segue reference="T5m-FG-dKf"/>
     </inferredMetricsTieBreakers>
 </document>
