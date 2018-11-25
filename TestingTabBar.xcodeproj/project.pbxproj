@@ -58,7 +58,6 @@
 		FAAD8DA721970BFD00FDBE36 = {
 			isa = PBXGroup;
 			children = (
-				AA094EE221AB146500E4F1EC /* PageViewController.swift */,
 				FAAD8DB221970BFD00FDBE36 /* TestingTabBar */,
 				FAAD8DB121970BFD00FDBE36 /* Products */,
 			);
@@ -77,6 +76,7 @@
 			children = (
 				AAB40F5A21A83FE200AE8CE0 /* TheTableViewController.swift */,
 				FAAD8DB321970BFD00FDBE36 /* AppDelegate.swift */,
+				AA094EE221AB146500E4F1EC /* PageViewController.swift */,
 				FAAD8DB721970BFD00FDBE36 /* Main.storyboard */,
 				AA126601219C725A001A4B13 /* ShowablePopoverViewController.swift */,
 				AA1265FF219C65FB001A4B13 /* PopoverViewController.swift */,
