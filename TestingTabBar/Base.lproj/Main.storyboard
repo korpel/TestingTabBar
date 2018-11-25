@@ -311,7 +311,7 @@
         <!--wht-->
         <scene sceneID="k1Q-KW-Imj">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" title="wht" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="APw-nf-oho" customClass="PageViewController" customModule="TestingTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" title="wht" modalPresentationStyle="formSheet" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="APw-nf-oho" customClass="PageViewController" customModule="TestingTabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="XhJ-Gh-gpC"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KkR-Nv-wnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
