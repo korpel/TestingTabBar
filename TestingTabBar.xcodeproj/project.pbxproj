@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA094EE321AB146500E4F1EC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA094EE221AB146500E4F1EC /* PageViewController.swift */; };
 		AA126600219C65FB001A4B13 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1265FF219C65FB001A4B13 /* PopoverViewController.swift */; };
 		AA126602219C725A001A4B13 /* ShowablePopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA126601219C725A001A4B13 /* ShowablePopoverViewController.swift */; };
 		AA2F68BD219A9DA70096093E /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2F68BC219A9DA70096093E /* PresentedViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA094EE221AB146500E4F1EC /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		AA1265FF219C65FB001A4B13 /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		AA126601219C725A001A4B13 /* ShowablePopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowablePopoverViewController.swift; sourceTree = "<group>"; };
 		AA2F68BC219A9DA70096093E /* PresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		FAAD8DA721970BFD00FDBE36 = {
 			isa = PBXGroup;
 			children = (
+				AA094EE221AB146500E4F1EC /* PageViewController.swift */,
 				FAAD8DB221970BFD00FDBE36 /* TestingTabBar */,
 				FAAD8DB121970BFD00FDBE36 /* Products */,
 			);
@@ -165,6 +168,7 @@
 				AAB40F6321A84E2C00AE8CE0 /* LatestViewController.swift in Sources */,
 				FAAD8DD02197308900FDBE36 /* SecondViewController.swift in Sources */,
 				AAB40F5B21A83FE200AE8CE0 /* TheTableViewController.swift in Sources */,
+				AA094EE321AB146500E4F1EC /* PageViewController.swift in Sources */,
 				FAAD8DB421970BFD00FDBE36 /* AppDelegate.swift in Sources */,
 				AA126600219C65FB001A4B13 /* PopoverViewController.swift in Sources */,
 				AA3DD33721A575320067841E /* ViewController.swift in Sources */,

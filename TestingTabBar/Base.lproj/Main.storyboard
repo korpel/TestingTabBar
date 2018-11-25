@@ -313,11 +313,6 @@
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" title="wht" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="APw-nf-oho" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="XhJ-Gh-gpC"/>
-                    <connections>
-                        <segue destination="paF-Jo-t2m" kind="show" id="Xqd-Ew-cgc"/>
-                        <segue destination="OMM-Kp-5M4" kind="show" id="naD-fR-Yjr"/>
-                        <segue destination="Uj4-e6-VgQ" kind="show" id="iol-d0-0DH"/>
-                    </connections>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KkR-Nv-wnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -326,7 +321,7 @@
         <!--View Controller-->
         <scene sceneID="yxB-zR-iAD">
             <objects>
-                <viewController id="OMM-Kp-5M4" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ressecondViewControllerID" storyboardIdentifier="secondViewControllerID" id="OMM-Kp-5M4" sceneMemberID="viewController">
                     <view key="view" alpha="0.40000000000000002" contentMode="scaleToFill" id="P0U-C4-Op6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -488,7 +483,7 @@
         <!--View Controller-->
         <scene sceneID="FE0-0P-xlx">
             <objects>
-                <viewController id="paF-Jo-t2m" sceneMemberID="viewController">
+                <viewController restorationIdentifier="resfirstViewControllerID" storyboardIdentifier="firstViewControllerID" id="paF-Jo-t2m" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AcU-YH-EQw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -503,11 +498,11 @@
         <!--View Controller-->
         <scene sceneID="y3v-Ax-O2q">
             <objects>
-                <viewController id="Uj4-e6-VgQ" sceneMemberID="viewController">
+                <viewController restorationIdentifier="resthirdViewControllerID" storyboardIdentifier="thirdViewControllerID" id="Uj4-e6-VgQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rf5-zP-dh9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ipI-s9-MHe"/>
                     </view>
                 </viewController>
