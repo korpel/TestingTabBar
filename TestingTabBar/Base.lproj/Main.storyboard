@@ -261,6 +261,7 @@
                         <segue destination="qWa-Bb-gou" kind="relationship" relationship="viewControllers" id="g5W-or-ZgP"/>
                         <segue destination="OwL-LQ-elm" kind="relationship" relationship="viewControllers" id="4FX-9Y-BWh"/>
                         <segue destination="GKk-mz-7Po" kind="relationship" relationship="viewControllers" id="2Ag-Cr-96G"/>
+                        <segue destination="APw-nf-oho" kind="relationship" relationship="viewControllers" id="cFH-UC-kTj"/>
                         <segue destination="1e7-gj-Rt7" kind="relationship" relationship="viewControllers" id="g8L-Ph-TpJ"/>
                         <segue destination="GrW-CJ-dQv" kind="relationship" relationship="viewControllers" id="Jg9-LL-wjO"/>
                     </connections>
@@ -272,6 +273,7 @@
         <!--Item-->
         <scene sceneID="lBh-4k-qm8">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjL-xr-xiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="1e7-gj-Rt7" customClass="TheTableViewController" customModule="TestingTabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fPB-i9-W1g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -303,9 +305,18 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="0dZ-5E-THG"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kjL-xr-xiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="593" y="374"/>
+        </scene>
+        <!--wht-->
+        <scene sceneID="k1Q-KW-Imj">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" title="wht" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="APw-nf-oho" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="page" id="FAf-8z-7f8"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KkR-Nv-wnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1354" y="382"/>
         </scene>
         <!--theNavController-->
         <scene sceneID="Tmh-2c-4Lt">
@@ -443,7 +454,7 @@
         <image name="monkey2" width="220" height="330"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="f5m-RF-Oet"/>
-        <segue reference="vE5-KR-U23"/>
+        <segue reference="Bjx-S0-rsA"/>
+        <segue reference="T5m-FG-dKf"/>
     </inferredMetricsTieBreakers>
 </document>
