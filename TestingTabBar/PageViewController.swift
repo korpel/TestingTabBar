@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PageViewController: UIPageViewController /*,UIPageViewControllerDelegate, UIPageViewControllerDataSource*/ {
+class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
     fileprivate lazy var pages : [UIViewController] = {
         return [
@@ -22,15 +22,32 @@ class PageViewController: UIPageViewController /*,UIPageViewControllerDelegate, 
     {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier)
     }
-    /*
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        <#code#>
+     
+        guard let viewControllerIndex = pages.index(of: viewController) else { return nil }
+     
+        let previousIndex = viewControllerIndex - 1
+     
+        guard previousIndex >= 0          else { return pages.last }
+     
+        guard pages.count > previousIndex else { return nil        }
+     
+        return pages[previousIndex]
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        <#code#>
+        guard let viewControllerIndex = pages.index(of: viewController) else { return nil }
+        
+        let nextIndex = viewControllerIndex + 1
+        
+        guard nextIndex < pages.count else { return pages.first }
+        
+        guard pages.count > nextIndex else { return nil         }
+        
+        return pages[nextIndex]
     }
- */
+ 
     
 
     override func viewDidLoad() {
