@@ -1,15 +1,10 @@
-//
-//  PageViewController.swift
-//  TestingTabBar
-//
-//  Created by Antonis Vozikis on 25/11/2018.
-//  Copyright © 2018 Antonis Vozikis. All rights reserved.
-//
+
 
 import UIKit
 
 class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
+    //my 4 viewControllers used in the UIPageViewController
     fileprivate lazy var pages : [UIViewController] = {
         return [
             self.getViewController(withIdentifier: "firstViewControllerID"),
@@ -19,6 +14,9 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
             
         ]
     }()
+   
+   
+    
     fileprivate func getViewController(withIdentifier identifier: String) -> UIViewController
     {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier)
@@ -33,7 +31,8 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
         guard previousIndex >= 0          else { return pages.last }
      
         guard pages.count > previousIndex else { return nil        }
-     
+        
+
         return pages[previousIndex]
     }
     
@@ -47,51 +46,43 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
         
         guard pages.count > nextIndex else { return nil         }
         
+
         return pages[nextIndex]
     }
+    
     public func setupPageControl() {
-         let appearance = UIPageControl.appearance(whenContainedInInstancesOf: [UIPageViewController.self])
+        let appearance = UIPageControl.appearance(whenContainedInInstancesOf: [UIPageViewController.self])
         appearance.pageIndicatorTintColor = UIColor.gray
         appearance.currentPageIndicatorTintColor = UIColor.red
         appearance.backgroundColor = pages[appearance.currentPage].view.backgroundColor
-        appearance.setNeedsDisplay()
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        setupPageControl()
         return pages.count
     }
     
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-       return 0
-    }
- 
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
+        return 0
     }
 
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupPageControl()
 
 
        self.dataSource = self
        delegate = self
         if let firstVC = pages.first {
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
+            setupPageControl()
+
         }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
