@@ -55,10 +55,10 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
     }
     
     private func setupPageControl() {
-        let appearance = UIPageControl.appearance(whenContainedInInstancesOf: [UIPageViewController.self])
+        let appearance = UIPageControl()
         appearance.pageIndicatorTintColor = UIColor.gray
         appearance.currentPageIndicatorTintColor = UIColor.red
-        //appearance.backgroundColor = UIColor.purple
+        appearance.backgroundColor = UIColor.clear
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
