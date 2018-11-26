@@ -55,7 +55,7 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
     }
     
     private func setupPageControl() {
-        let appearance = UIPageControl.appearance()
+        let appearance = UIPageControl.appearance(whenContainedInInstancesOf: [UIPageViewController.self])
         appearance.pageIndicatorTintColor = UIColor.gray
         appearance.currentPageIndicatorTintColor = UIColor.red
         //appearance.backgroundColor = UIColor.purple
