@@ -49,17 +49,18 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
         
         return pages[nextIndex]
     }
+    private func setupPageControl() {
+        let appearance = UIPageControl.appearance(whenContainedInInstancesOf: [UIPageViewController.self])
+        appearance.pageIndicatorTintColor = UIColor.gray
+        appearance.currentPageIndicatorTintColor = UIColor.red
+        appearance.backgroundColor = pages[appearance.currentPage].view.backgroundColor
+    }
+    
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         setupPageControl()
         return pages.count
     }
     
-    private func setupPageControl() {
-        let appearance = UIPageControl()
-        appearance.pageIndicatorTintColor = UIColor.gray
-        appearance.currentPageIndicatorTintColor = UIColor.red
-        appearance.backgroundColor = UIColor.clear
-    }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
        return 0
