@@ -49,6 +49,16 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
         
         return pages[nextIndex]
     }
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        return pages.count
+    }
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        guard let firstViewController = viewControllers?.first,
+            FirstViewControllerIndex = pages.index(FirstViewController, offsetBy: 0) else {
+                return 0
+        }
+        return firstViewController
+    }
  
     
 
