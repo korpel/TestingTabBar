@@ -46,7 +46,7 @@ class LatestViewController: UIViewController, UITableViewDataSource, UITableView
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
             // create a new cell if needed or reuse an old one
-            let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
+            let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)!
             
             // set the text from the data model
             cell.textLabel?.text = self.animals[indexPath.row]
