@@ -50,14 +50,19 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
         return pages[nextIndex]
     }
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        setupPageControl()
         return pages.count
     }
+    
+    private func setupPageControl() {
+        let appearance = UIPageControl.appearance()
+        appearance.pageIndicatorTintColor = UIColor.gray
+        appearance.currentPageIndicatorTintColor = UIColor.red
+        //appearance.backgroundColor = UIColor.purple
+    }
+    
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        guard let firstViewController = viewControllers?.first,
-            FirstViewControllerIndex = pages.index(FirstViewController, offsetBy: 0) else {
-                return 0
-        }
-        return firstViewController
+       return 0
     }
  
     
