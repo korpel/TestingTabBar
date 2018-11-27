@@ -67,6 +67,18 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
         return 0
     }
 
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        for view in self.view.subviews{
+            if view is UIScrollView {
+                view.frame = UIScreen.main.bounds
+            }
+            else if view is UIPageControl {
+                let appearance = UIPageControl.appearance(whenContainedInInstancesOf: [UIPageViewController.self])
+                view.backgroundColor = pages[appearance.currentPage].view.backgroundColor
+            }
+        }
+    }
     
 
     
