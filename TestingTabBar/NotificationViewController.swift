@@ -23,7 +23,8 @@ class NotificationViewController: UIViewController {
     }
     
     @objc func onDidReceiveData(_ notification:Notification) {
-        // Do something now
+            print("received data")
+        
     }
     
 
