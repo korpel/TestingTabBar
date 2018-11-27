@@ -10,12 +10,27 @@ import UIKit
 
 class NotificationViewController: UIViewController {
 
+    @IBAction func buttonPressed(_ sender: UIButton) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(onDidReceiveData(_:)), name:.didReceiveData, object: nil)
+        /*
+         NotificationCenter.default.addObserver(self, selector: [selector], name: .didCompleteTask, object: nil)
+         */
+    }
+    
+    @objc func onDidReceiveData(_ notification:Notification) {
+        // Do something now
     }
     
 
 
+}
+
+extension Notification.Name {
+    static let didReceiveData = Notification.Name("didReceiveData")
+    static let didCompleteTask = Notification.Name("didCompleteTask")
+    static let completedLengthyDownload = Notification.Name("completedLengthyDownload")
 }
