@@ -58,7 +58,7 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
-      //  setupPageControl()
+      setupPageControl()
         return pages.count
     }
     
