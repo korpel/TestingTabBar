@@ -58,15 +58,20 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
-        setupPageControl()
+      //  setupPageControl()
         return pages.count
     }
     
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        guard let firstViewController = viewControllers?.first, let firstViewControllerIndex = pages.firstIndex(of: firstViewController) else
+        {
         return 0
+        }
+        return firstViewControllerIndex
     }
 
+    /*
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         for view in self.view.subviews{
@@ -80,7 +85,7 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
         }
     }
     
-
+*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,8 +95,6 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate, UIP
        delegate = self
         if let firstVC = pages.first {
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
-            setupPageControl()
-
         }
     }
     
