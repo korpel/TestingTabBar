@@ -11,7 +11,8 @@ import UIKit
 class NotificationViewController: UIViewController {
 
     @IBAction func buttonPressed(_ sender: UIButton) {
-        NotificationCenter.default.post(name: .didReceiveData, object: nil)
+     
+    NotificationCenter.default.post(name: .didReceiveData, object: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
