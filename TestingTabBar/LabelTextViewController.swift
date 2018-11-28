@@ -15,21 +15,24 @@ class LabelTextViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         textField.delegate = self
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         textField.becomeFirstResponder()
     }
+ 
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return true
     }
-    
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         textField.clearsOnBeginEditing =  true
         if let text = textField.text {
             print(text)
         }
+        textField.text = nil
+
+        
         return false
     }
     
