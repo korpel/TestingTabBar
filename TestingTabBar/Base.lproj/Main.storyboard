@@ -251,11 +251,27 @@
         <!--labelText-->
         <scene sceneID="RWR-vC-KFi">
             <objects>
-                <viewController id="YnW-rk-y4Y" sceneMemberID="viewController">
+                <viewController id="YnW-rk-y4Y" customClass="LabelTextViewController" customModule="TestingTabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RnH-kI-Yj7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="URP-x3-JSY">
+                                <rect key="frame" x="82" y="338" width="250" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ISG-yI-YDf"/>
+                                    <constraint firstAttribute="width" constant="250" id="p8L-Ts-qDh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="URP-x3-JSY" firstAttribute="centerY" secondItem="RnH-kI-Yj7" secondAttribute="centerY" id="J3D-9c-8hv"/>
+                            <constraint firstItem="URP-x3-JSY" firstAttribute="centerX" secondItem="RnH-kI-Yj7" secondAttribute="centerX" id="j6K-Cb-Cne"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kkJ-lV-zQl"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="labelText" image="image2" id="kpn-7F-n0V"/>
@@ -276,12 +292,12 @@
                     <connections>
                         <segue destination="qWa-Bb-gou" kind="relationship" relationship="viewControllers" id="g5W-or-ZgP"/>
                         <segue destination="Nk7-KV-j5U" kind="relationship" relationship="viewControllers" id="Yfa-0b-imK"/>
+                        <segue destination="YnW-rk-y4Y" kind="relationship" relationship="viewControllers" id="BeC-Wb-6fR"/>
                         <segue destination="OwL-LQ-elm" kind="relationship" relationship="viewControllers" id="4FX-9Y-BWh"/>
                         <segue destination="GKk-mz-7Po" kind="relationship" relationship="viewControllers" id="2Ag-Cr-96G"/>
                         <segue destination="fod-v5-fqQ" kind="relationship" relationship="viewControllers" id="cFH-UC-kTj"/>
                         <segue destination="1e7-gj-Rt7" kind="relationship" relationship="viewControllers" id="g8L-Ph-TpJ"/>
                         <segue destination="GrW-CJ-dQv" kind="relationship" relationship="viewControllers" id="Jg9-LL-wjO"/>
-                        <segue destination="YnW-rk-y4Y" kind="relationship" relationship="viewControllers" id="BeC-Wb-6fR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQw-Dg-TCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
