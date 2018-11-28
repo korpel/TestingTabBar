@@ -8,12 +8,15 @@
 
 import UIKit
 
-class LabelTextViewController: UIViewController {
+class LabelTextViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        textField.delegate = self
+    }
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return true
     }
     
 

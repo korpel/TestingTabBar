@@ -275,6 +275,9 @@
                         <viewLayoutGuide key="safeArea" id="kkJ-lV-zQl"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="labelText" image="image2" id="kpn-7F-n0V"/>
+                    <connections>
+                        <outlet property="textField" destination="URP-x3-JSY" id="aIN-Ja-qaf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WqE-gO-Zql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
