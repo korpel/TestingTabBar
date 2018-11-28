@@ -22,7 +22,18 @@ class LabelTextViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return true
     }
+    
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        textField.clearsOnBeginEditing =  true
+        if let text = textField.text {
+            print(text)
+        }
+        return false
+    }
+    
+    /*func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textFieldDidEndEditing(textField, reason: .committed)
         return false
     }
@@ -32,6 +43,7 @@ class LabelTextViewController: UIViewController, UITextFieldDelegate {
             print(text)
         }
     }
+ */
         
    
     
