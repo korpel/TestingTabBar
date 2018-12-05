@@ -7,45 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA094EE321AB146500E4F1EC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA094EE221AB146500E4F1EC /* PageViewController.swift */; };
-		AA094EE521AD1ACA00E4F1EC /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA094EE421AD1ACA00E4F1EC /* NotificationViewController.swift */; };
-		AA126600219C65FB001A4B13 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1265FF219C65FB001A4B13 /* PopoverViewController.swift */; };
-		AA126602219C725A001A4B13 /* ShowablePopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA126601219C725A001A4B13 /* ShowablePopoverViewController.swift */; };
-		AA2F68BD219A9DA70096093E /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2F68BC219A9DA70096093E /* PresentedViewController.swift */; };
-		AA3DD33721A575320067841E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3DD33621A575310067841E /* ViewController.swift */; };
-		AA5DE13021AE91E200A8D587 /* LabelTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5DE12F21AE91E200A8D587 /* LabelTextViewController.swift */; };
-		AAB40F5B21A83FE200AE8CE0 /* TheTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB40F5A21A83FE200AE8CE0 /* TheTableViewController.swift */; };
-		AAB40F6321A84E2C00AE8CE0 /* LatestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB40F6221A84E2C00AE8CE0 /* LatestViewController.swift */; };
 		FA3584C221986DE200890635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3584C121986DE200890635 /* Assets.xcassets */; };
 		FAAD8DB421970BFD00FDBE36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD8DB321970BFD00FDBE36 /* AppDelegate.swift */; };
 		FAAD8DB921970BFD00FDBE36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD8DB721970BFD00FDBE36 /* Main.storyboard */; };
 		FAAD8DBE21970BFF00FDBE36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD8DBC21970BFF00FDBE36 /* LaunchScreen.storyboard */; };
-		FAAD8DCE2197308200FDBE36 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD8DCD2197308200FDBE36 /* FirstViewController.swift */; };
-		FAAD8DD02197308900FDBE36 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD8DCF2197308900FDBE36 /* SecondViewController.swift */; };
-		FAAD8DD22197309100FDBE36 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD8DD12197309100FDBE36 /* ThirdViewController.swift */; };
-		FAAD8DD4219730AA00FDBE36 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD8DD3219730AA00FDBE36 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA094EE221AB146500E4F1EC /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		AA094EE421AD1ACA00E4F1EC /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
-		AA1265FF219C65FB001A4B13 /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
-		AA126601219C725A001A4B13 /* ShowablePopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowablePopoverViewController.swift; sourceTree = "<group>"; };
-		AA2F68BC219A9DA70096093E /* PresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
-		AA3DD33621A575310067841E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA5DE12F21AE91E200A8D587 /* LabelTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextViewController.swift; sourceTree = "<group>"; };
-		AAB40F5A21A83FE200AE8CE0 /* TheTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTableViewController.swift; sourceTree = "<group>"; };
-		AAB40F6221A84E2C00AE8CE0 /* LatestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestViewController.swift; sourceTree = "<group>"; };
 		FA3584C121986DE200890635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAAD8DB021970BFD00FDBE36 /* TestingTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAD8DB321970BFD00FDBE36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAD8DB821970BFD00FDBE36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAAD8DBD21970BFF00FDBE36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAAD8DBF21970BFF00FDBE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAAD8DCD2197308200FDBE36 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FAAD8DCF2197308900FDBE36 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		FAAD8DD12197309100FDBE36 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		FAAD8DD3219730AA00FDBE36 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,21 +52,8 @@
 		FAAD8DB221970BFD00FDBE36 /* TestingTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				AAB40F5A21A83FE200AE8CE0 /* TheTableViewController.swift */,
 				FAAD8DB321970BFD00FDBE36 /* AppDelegate.swift */,
-				AA094EE221AB146500E4F1EC /* PageViewController.swift */,
 				FAAD8DB721970BFD00FDBE36 /* Main.storyboard */,
-				AA5DE12F21AE91E200A8D587 /* LabelTextViewController.swift */,
-				AA094EE421AD1ACA00E4F1EC /* NotificationViewController.swift */,
-				AA126601219C725A001A4B13 /* ShowablePopoverViewController.swift */,
-				AA1265FF219C65FB001A4B13 /* PopoverViewController.swift */,
-				AA2F68BC219A9DA70096093E /* PresentedViewController.swift */,
-				FAAD8DCD2197308200FDBE36 /* FirstViewController.swift */,
-				FAAD8DCF2197308900FDBE36 /* SecondViewController.swift */,
-				FAAD8DD12197309100FDBE36 /* ThirdViewController.swift */,
-				FAAD8DD3219730AA00FDBE36 /* TabBarViewController.swift */,
-				AA3DD33621A575310067841E /* ViewController.swift */,
-				AAB40F6221A84E2C00AE8CE0 /* LatestViewController.swift */,
 				FA3584C121986DE200890635 /* Assets.xcassets */,
 				FAAD8DBC21970BFF00FDBE36 /* LaunchScreen.storyboard */,
 				FAAD8DBF21970BFF00FDBE36 /* Info.plist */,
@@ -171,20 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5DE13021AE91E200A8D587 /* LabelTextViewController.swift in Sources */,
-				AAB40F6321A84E2C00AE8CE0 /* LatestViewController.swift in Sources */,
-				FAAD8DD02197308900FDBE36 /* SecondViewController.swift in Sources */,
-				AAB40F5B21A83FE200AE8CE0 /* TheTableViewController.swift in Sources */,
-				AA094EE321AB146500E4F1EC /* PageViewController.swift in Sources */,
 				FAAD8DB421970BFD00FDBE36 /* AppDelegate.swift in Sources */,
-				AA126600219C65FB001A4B13 /* PopoverViewController.swift in Sources */,
-				AA3DD33721A575320067841E /* ViewController.swift in Sources */,
-				FAAD8DD22197309100FDBE36 /* ThirdViewController.swift in Sources */,
-				FAAD8DD4219730AA00FDBE36 /* TabBarViewController.swift in Sources */,
-				AA094EE521AD1ACA00E4F1EC /* NotificationViewController.swift in Sources */,
-				AA126602219C725A001A4B13 /* ShowablePopoverViewController.swift in Sources */,
-				FAAD8DCE2197308200FDBE36 /* FirstViewController.swift in Sources */,
-				AA2F68BD219A9DA70096093E /* PresentedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
