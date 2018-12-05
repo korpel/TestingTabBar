@@ -39,26 +39,26 @@
                                     <action selector="thirdButtonTouched:" destination="khy-qB-yCX" eventType="touchUpInside" id="huH-oY-MDv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnB-ya-aQt">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnB-ya-aQt">
                                 <rect key="frame" x="125.66666666666669" y="496" width="163" height="30"/>
                                 <state key="normal" title="one button action sheet"/>
                                 <connections>
                                     <action selector="fourthButtonTouched:" destination="khy-qB-yCX" eventType="touchUpInside" id="ZpB-fx-8Pq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psp-Rf-e0A">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psp-Rf-e0A">
                                 <rect key="frame" x="124" y="442" width="163" height="30"/>
                                 <state key="normal" title="two button action sheet"/>
                                 <connections>
                                     <action selector="fifthButtonTouched:" destination="khy-qB-yCX" eventType="touchUpInside" id="jPT-ns-Rxd"/>
+                                    <segue destination="cTU-2k-Xrs" kind="show" id="wLq-dW-gbI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF4-hv-WTd">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF4-hv-WTd">
                                 <rect key="frame" x="120" y="376" width="174" height="30"/>
                                 <state key="normal" title="three button action sheet"/>
                                 <connections>
                                     <action selector="sixthButtonTouched:" destination="khy-qB-yCX" eventType="touchUpInside" id="FIs-js-otT"/>
-                                    <segue destination="cTU-2k-Xrs" kind="push" id="Osh-tv-VWz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,9 +71,9 @@
                             <constraint firstItem="lnB-ya-aQt" firstAttribute="centerX" secondItem="s4J-If-fK2" secondAttribute="centerX" id="I9b-30-sv1"/>
                             <constraint firstItem="Dw8-gO-Q1u" firstAttribute="centerX" secondItem="llA-Hs-Xyb" secondAttribute="centerX" id="Pa4-u9-dL0"/>
                             <constraint firstItem="Dw8-gO-Q1u" firstAttribute="top" secondItem="s4J-If-fK2" secondAttribute="bottom" constant="30" id="Yig-Pc-yiJ"/>
-                            <constraint firstItem="lnB-ya-aQt" firstAttribute="top" secondItem="psp-Rf-e0A" secondAttribute="bottom" constant="30" id="ckF-aa-uWN"/>
-                            <constraint firstItem="psp-Rf-e0A" firstAttribute="top" secondItem="gF4-hv-WTd" secondAttribute="bottom" constant="30" id="ctT-lX-oXw"/>
-                            <constraint firstItem="s4J-If-fK2" firstAttribute="top" secondItem="lnB-ya-aQt" secondAttribute="bottom" constant="30" id="gSt-kP-Np6"/>
+                            <constraint firstItem="lnB-ya-aQt" firstAttribute="top" relation="lessThanOrEqual" secondItem="psp-Rf-e0A" secondAttribute="bottom" constant="30" id="ckF-aa-uWN"/>
+                            <constraint firstItem="psp-Rf-e0A" firstAttribute="top" relation="lessThanOrEqual" secondItem="gF4-hv-WTd" secondAttribute="bottom" constant="30" id="ctT-lX-oXw"/>
+                            <constraint firstItem="s4J-If-fK2" firstAttribute="top" relation="lessThanOrEqual" secondItem="lnB-ya-aQt" secondAttribute="bottom" constant="30" id="gSt-kP-Np6"/>
                             <constraint firstItem="s4J-If-fK2" firstAttribute="centerX" secondItem="Dw8-gO-Q1u" secondAttribute="centerX" id="jO1-7M-AMG"/>
                             <constraint firstItem="psp-Rf-e0A" firstAttribute="centerX" secondItem="lnB-ya-aQt" secondAttribute="centerX" id="qu6-eJ-8fr"/>
                         </constraints>
