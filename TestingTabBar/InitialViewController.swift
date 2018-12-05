@@ -20,7 +20,27 @@ class InitialViewController: UIViewController {
         let alert = UIAlertController(title: "just a title", message: "just a message", preferredStyle: .alert)
         self.present(alert, animated: true, completion: nil)
     }
+    @IBAction func secondButtonTouched(_ sender: UIButton) {
+        let alert = UIAlertController(title: "just a title", message: "just a message", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "first", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "second", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
     
+    @IBAction func thirdButtonTouched(_ sender: UIButton) {
+        let alert = UIAlertController(title: "just a title", message: "just a message", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "first", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "second", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "third", style: .destructive, handler: nil))
+         alert.addAction(UIAlertAction(title: "fourth", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    @IBAction func fourthButtonTouched(_ sender: UIButton) {
+    }
+    @IBAction func fifthButtonTouched(_ sender: UIButton) {
+    }
+    @IBAction func sixthButtonTouched(_ sender: UIButton) {
+    }
     /*
     // MARK: - Navigation
 

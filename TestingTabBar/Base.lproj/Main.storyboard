@@ -19,17 +19,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llA-Hs-Xyb">
-                                <rect key="frame" x="184" y="656" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="152" y="676" width="110" height="30"/>
+                                <state key="normal" title="one button alert"/>
                                 <connections>
                                     <action selector="buttonTouched:" destination="khy-qB-yCX" eventType="touchUpInside" id="aCy-3F-Bd1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dw8-gO-Q1u">
+                                <rect key="frame" x="152.66666666666666" y="616" width="108.99999999999997" height="30"/>
+                                <state key="normal" title="two button alert"/>
+                                <connections>
+                                    <action selector="secondButtonTouched:" destination="khy-qB-yCX" eventType="touchUpInside" id="PCK-Kq-m1p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4J-If-fK2">
+                                <rect key="frame" x="147" y="556" width="120" height="30"/>
+                                <state key="normal" title="three button alert"/>
+                                <connections>
+                                    <action selector="thirdButtonTouched:" destination="khy-qB-yCX" eventType="touchUpInside" id="huH-oY-MDv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnB-ya-aQt">
+                                <rect key="frame" x="125.66666666666669" y="496" width="163" height="30"/>
+                                <state key="normal" title="one button action sheet"/>
+                                <connections>
+                                    <action selector="fourthButtonTouched:" destination="khy-qB-yCX" eventType="touchUpInside" id="ZpB-fx-8Pq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psp-Rf-e0A">
+                                <rect key="frame" x="124" y="442" width="163" height="30"/>
+                                <state key="normal" title="two button action sheet"/>
+                                <connections>
+                                    <action selector="fifthButtonTouched:" destination="khy-qB-yCX" eventType="touchUpInside" id="jPT-ns-Rxd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF4-hv-WTd">
+                                <rect key="frame" x="120" y="376" width="174" height="30"/>
+                                <state key="normal" title="three button action sheet"/>
+                                <connections>
+                                    <action selector="sixthButtonTouched:" destination="khy-qB-yCX" eventType="touchUpInside" id="FIs-js-otT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="llA-Hs-Xyb" firstAttribute="centerX" secondItem="H8u-3K-fEE" secondAttribute="centerX" id="24v-yw-oWU"/>
-                            <constraint firstItem="FdU-Hf-AqC" firstAttribute="bottom" secondItem="llA-Hs-Xyb" secondAttribute="bottom" constant="50" id="Gtq-E6-kyn"/>
+                            <constraint firstItem="llA-Hs-Xyb" firstAttribute="top" secondItem="Dw8-gO-Q1u" secondAttribute="bottom" constant="30" id="37A-6j-Yom"/>
+                            <constraint firstItem="gF4-hv-WTd" firstAttribute="centerX" secondItem="psp-Rf-e0A" secondAttribute="centerX" id="3gw-lc-r2R"/>
+                            <constraint firstItem="FdU-Hf-AqC" firstAttribute="bottom" secondItem="llA-Hs-Xyb" secondAttribute="bottom" constant="30" id="Gtq-E6-kyn"/>
+                            <constraint firstItem="lnB-ya-aQt" firstAttribute="centerX" secondItem="s4J-If-fK2" secondAttribute="centerX" id="I9b-30-sv1"/>
+                            <constraint firstItem="Dw8-gO-Q1u" firstAttribute="centerX" secondItem="llA-Hs-Xyb" secondAttribute="centerX" id="Pa4-u9-dL0"/>
+                            <constraint firstItem="Dw8-gO-Q1u" firstAttribute="top" secondItem="s4J-If-fK2" secondAttribute="bottom" constant="30" id="Yig-Pc-yiJ"/>
+                            <constraint firstItem="lnB-ya-aQt" firstAttribute="top" secondItem="psp-Rf-e0A" secondAttribute="bottom" constant="30" id="ckF-aa-uWN"/>
+                            <constraint firstItem="psp-Rf-e0A" firstAttribute="top" secondItem="gF4-hv-WTd" secondAttribute="bottom" constant="30" id="ctT-lX-oXw"/>
+                            <constraint firstItem="s4J-If-fK2" firstAttribute="top" secondItem="lnB-ya-aQt" secondAttribute="bottom" constant="30" id="gSt-kP-Np6"/>
+                            <constraint firstItem="s4J-If-fK2" firstAttribute="centerX" secondItem="Dw8-gO-Q1u" secondAttribute="centerX" id="jO1-7M-AMG"/>
+                            <constraint firstItem="psp-Rf-e0A" firstAttribute="centerX" secondItem="lnB-ya-aQt" secondAttribute="centerX" id="qu6-eJ-8fr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FdU-Hf-AqC"/>
                     </view>
