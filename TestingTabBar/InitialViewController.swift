@@ -32,7 +32,7 @@ class InitialViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "first", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "second", style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "third", style: .destructive, handler: nil))
-         alert.addAction(UIAlertAction(title: "fourth", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "fourth", style: .default, handler: {action in print("tony")}))
         self.present(alert, animated: true, completion: nil)
     }
     @IBAction func fourthButtonTouched(_ sender: UIButton) {
