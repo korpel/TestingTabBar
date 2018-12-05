@@ -40,6 +40,12 @@ class InitialViewController: UIViewController {
     @IBAction func fifthButtonTouched(_ sender: UIButton) {
     }
     @IBAction func sixthButtonTouched(_ sender: UIButton) {
+        let alert = UIAlertController(title: "just a title", message: "just a message", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "first", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "second", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "third", style: .destructive, handler: nil))
+        alert.addAction(UIAlertAction(title: "fourth", style: .default, handler: {action in print("tony")}))
+        self.present(alert, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
