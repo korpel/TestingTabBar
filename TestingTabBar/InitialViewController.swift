@@ -19,6 +19,7 @@ class InitialViewController: UIViewController {
         counter += 1
     }
     @IBAction func someButtonTap(_ sender: UIButton) {
+        someControler.sendActions(for: .allEvents)
     }
     
     @IBOutlet var initialView: UIView!
