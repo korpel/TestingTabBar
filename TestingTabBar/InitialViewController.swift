@@ -32,6 +32,7 @@ class InitialViewController: UIViewController {
     @IBOutlet var initialView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        someControler.sendActions(for: .allEvents)
         
     }
     
