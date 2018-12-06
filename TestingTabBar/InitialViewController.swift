@@ -17,6 +17,7 @@ class InitialViewController: UIViewController {
         var counter = 0
         someLabel.text = "\(counter)"
         counter += 1
+
     }
     
     @IBOutlet var initialView: UIView!
