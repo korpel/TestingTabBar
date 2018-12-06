@@ -37,12 +37,21 @@
                                     <action selector="someControlerTap:" destination="JmE-pg-cxC" eventType="valueChanged" id="In0-az-LJ7"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPd-iM-mEw">
+                                <rect key="frame" x="184" y="371" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="someButtonTap:" destination="JmE-pg-cxC" eventType="touchUpInside" id="Oae-D2-z3a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WIe-Kh-Tvg" firstAttribute="leading" secondItem="GbY-YI-Igb" secondAttribute="leading" id="4ZI-Ye-lL3"/>
                             <constraint firstItem="Nyk-Xo-Uf2" firstAttribute="top" secondItem="WIe-Kh-Tvg" secondAttribute="bottom" constant="100" id="9uY-jJ-r5D"/>
+                            <constraint firstItem="dPd-iM-mEw" firstAttribute="centerX" secondItem="GbY-YI-Igb" secondAttribute="centerX" id="Fca-vh-Ipg"/>
                             <constraint firstAttribute="trailing" secondItem="WIe-Kh-Tvg" secondAttribute="trailing" id="m0y-J1-icg"/>
+                            <constraint firstItem="dPd-iM-mEw" firstAttribute="top" secondItem="Nyk-Xo-Uf2" secondAttribute="bottom" constant="100" id="q0a-or-ztb"/>
                             <constraint firstItem="Nyk-Xo-Uf2" firstAttribute="centerX" secondItem="GbY-YI-Igb" secondAttribute="centerX" id="t3D-c0-2vN"/>
                             <constraint firstItem="WIe-Kh-Tvg" firstAttribute="top" secondItem="7kW-aB-vrO" secondAttribute="top" constant="103" id="ziK-bB-N4X"/>
                         </constraints>

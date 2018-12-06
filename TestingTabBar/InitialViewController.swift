@@ -9,17 +9,16 @@
 import UIKit
 
 class InitialViewController: UIViewController {
+    var counter = 0
 
     @IBOutlet weak var someLabel: UILabel!
     @IBOutlet weak var someControler: UISegmentedControl!
     
     @IBAction func someControlerTap(_ sender: UISegmentedControl) {
-        var counter = 0
         someLabel.text = "\(counter)"
         counter += 1
-        print(counter)
-        print(someControler.state)
-
+    }
+    @IBAction func someButtonTap(_ sender: UIButton) {
     }
     
     @IBOutlet var initialView: UIView!
