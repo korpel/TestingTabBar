@@ -24,9 +24,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nyk-Xo-Uf2">
-                                <rect key="frame" x="147" y="276" width="121" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nyk-Xo-Uf2">
+                                <rect key="frame" x="146.66666666666666" y="276" width="120.99999999999997" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="KKf-9O-2BS"/>
+                                </constraints>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -36,7 +38,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WIe-Kh-Tvg" firstAttribute="leading" secondItem="GbY-YI-Igb" secondAttribute="leading" id="4ZI-Ye-lL3"/>
+                            <constraint firstItem="Nyk-Xo-Uf2" firstAttribute="centerX" secondItem="WIe-Kh-Tvg" secondAttribute="centerX" id="KcP-aI-VXV"/>
                             <constraint firstAttribute="trailing" secondItem="WIe-Kh-Tvg" secondAttribute="trailing" id="m0y-J1-icg"/>
+                            <constraint firstItem="Nyk-Xo-Uf2" firstAttribute="top" secondItem="WIe-Kh-Tvg" secondAttribute="bottom" constant="132" id="yct-i2-VaD"/>
                             <constraint firstItem="WIe-Kh-Tvg" firstAttribute="top" secondItem="7kW-aB-vrO" secondAttribute="top" constant="103" id="ziK-bB-N4X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7kW-aB-vrO"/>
