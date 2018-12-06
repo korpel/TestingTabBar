@@ -58,6 +58,7 @@
                         <viewLayoutGuide key="safeArea" id="7kW-aB-vrO"/>
                     </view>
                     <connections>
+                        <outlet property="someButton" destination="dPd-iM-mEw" id="0PC-bN-ROf"/>
                         <outlet property="someControler" destination="Nyk-Xo-Uf2" id="NhO-7d-dB8"/>
                         <outlet property="someLabel" destination="WIe-Kh-Tvg" id="y0L-RH-izb"/>
                     </connections>
