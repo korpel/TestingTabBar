@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-Al-kqh">
-                                <rect key="frame" x="47" y="471" width="320" height="216"/>
+                                <rect key="frame" x="47" y="401" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="565908873.49835205">
                                     <!--2018-12-07 20:54:33 +0000-->
                                 </date>
@@ -59,7 +59,7 @@
                             <constraint firstAttribute="trailing" secondItem="WIe-Kh-Tvg" secondAttribute="trailing" id="m0y-J1-icg"/>
                             <constraint firstItem="dPd-iM-mEw" firstAttribute="top" secondItem="Nyk-Xo-Uf2" secondAttribute="bottom" constant="100" id="q0a-or-ztb"/>
                             <constraint firstItem="Nyk-Xo-Uf2" firstAttribute="centerX" secondItem="GbY-YI-Igb" secondAttribute="centerX" id="t3D-c0-2vN"/>
-                            <constraint firstItem="WbN-Al-kqh" firstAttribute="top" secondItem="Nyk-Xo-Uf2" secondAttribute="bottom" constant="200" id="y6J-9n-CAD"/>
+                            <constraint firstItem="WbN-Al-kqh" firstAttribute="top" secondItem="Nyk-Xo-Uf2" secondAttribute="bottom" constant="130" id="y6J-9n-CAD"/>
                             <constraint firstItem="WbN-Al-kqh" firstAttribute="centerX" secondItem="GbY-YI-Igb" secondAttribute="centerX" id="zTK-Sz-9BE"/>
                             <constraint firstItem="WIe-Kh-Tvg" firstAttribute="top" secondItem="7kW-aB-vrO" secondAttribute="top" constant="103" id="ziK-bB-N4X"/>
                         </constraints>
