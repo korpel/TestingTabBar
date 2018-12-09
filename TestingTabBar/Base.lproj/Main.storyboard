@@ -44,11 +44,14 @@
                                     <action selector="someButtonTap:" destination="JmE-pg-cxC" eventType="touchUpInside" id="Oae-D2-z3a"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-Al-kqh">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-Al-kqh">
                                 <rect key="frame" x="47" y="401" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="565908873.49835205">
                                     <!--2018-12-07 20:54:33 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="datechanged:" destination="JmE-pg-cxC" eventType="valueChanged" id="Ira-bZ-2tb"/>
+                                </connections>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,6 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="7kW-aB-vrO"/>
                     </view>
                     <connections>
+                        <outlet property="date" destination="WbN-Al-kqh" id="vHU-23-Imk"/>
                         <outlet property="someButton" destination="dPd-iM-mEw" id="0PC-bN-ROf"/>
                         <outlet property="someControler" destination="Nyk-Xo-Uf2" id="NhO-7d-dB8"/>
                         <outlet property="someLabel" destination="WIe-Kh-Tvg" id="y0L-RH-izb"/>

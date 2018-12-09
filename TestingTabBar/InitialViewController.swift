@@ -9,6 +9,10 @@
 import UIKit
 
 class InitialViewController: UIViewController {
+    @IBAction func datechanged(_ sender: UIDatePicker) {
+        print("user finished adjusting")
+    }
+    @IBOutlet weak var date: UIDatePicker!
     var counter = 0
     @IBOutlet weak var someButton: UIButton!
     
