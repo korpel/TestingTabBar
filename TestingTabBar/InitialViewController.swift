@@ -10,7 +10,7 @@ import UIKit
 
 class InitialViewController: UIViewController {
     @IBAction func datechanged(_ sender: UIDatePicker) {
-        print("user finished adjusting")
+        print(date.calendar)
     }
     @IBOutlet weak var date: UIDatePicker!
     var counter = 0
