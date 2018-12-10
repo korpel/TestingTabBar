@@ -15,7 +15,7 @@ class ClassBVC: UIViewController {
     
     @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var secondView: UIView!
-    weak var delegate : ClassBVCDelegate
+    weak var delegate : ClassBVCDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +38,6 @@ class ClassBVC: UIViewController {
     @objc func handleTap(_ tapGesture: UITapGestureRecognizer) {
         
         view.backgroundColor = tapGesture.view?.backgroundColor
-        //MARK: step 3 Add the delegate method call here
+        delegate?.changeBackroundColor(tapGesture.view?.backgroundColor)
     }
 }
