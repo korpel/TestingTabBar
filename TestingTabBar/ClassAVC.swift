@@ -17,14 +17,14 @@ class ClassAVC: UIViewController, ClassBVCDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+       /*
         if let nav = segue.destination as? UINavigationController, let classB = nav.topViewController as? ClassBVC {
          classB.delegate = self
         }
+ */
         
     }
     
