@@ -8,14 +8,14 @@
 
 import UIKit
 
-//MARK: step 1 Add Protoclo here
-
+protocol ClassBVCDelegate : class {
+    func changeBackroundColor(_ color: UIColor?)
+}
 class ClassBVC: UIViewController {
     
     @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var secondView: UIView!
-//MARK: step 2 Create a delegate property here, don't forget to make it weak!
-
+    weak var delegate : ClassBVCDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
