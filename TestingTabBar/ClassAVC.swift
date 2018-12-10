@@ -8,8 +8,12 @@
 
 import UIKit
 
-//MARK: step 4 adopt the protocol here
-class ClassAVC: UIViewController {
+class ClassAVC: UIViewController, ClassBVCDelegate {
+    func changeBackroundColor(_ color: UIColor?) {
+        <#code#>
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +22,10 @@ class ClassAVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-    //MARK: step 5 create a reference of Class B and bind them through the prepareforsegue method
-
+        if let nav = segue.destination as? UINavigationController, let classB = nav.topViewController as? ClassBVC {
+         classB.delegate = self
+        }
+        
     }
     
     //MARK: step 6 finally use the method of the contract here
