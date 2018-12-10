@@ -63,11 +63,11 @@
 				FAAD8DB321970BFD00FDBE36 /* AppDelegate.swift */,
 				AAE578EE21BEF5640082064A /* LaunchScreen.storyboard */,
 				AA5DE13121B82F4100A8D587 /* InitialViewController.swift */,
+				AAE578ED21BEF5640082064A /* Main.storyboard */,
 				FA3584C121986DE200890635 /* Assets.xcassets */,
 				FAAD8DBC21970BFF00FDBE36 /* LaunchScreen.storyboard */,
 				AAE578EB21BEF5640082064A /* ClassAVC.swift */,
 				AAE578EC21BEF5640082064A /* ClassBVC.swift */,
-				AAE578ED21BEF5640082064A /* Main.storyboard */,
 				FAAD8DBF21970BFF00FDBE36 /* Info.plist */,
 			);
 			path = TestingTabBar;
