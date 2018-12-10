@@ -10,7 +10,7 @@ import UIKit
 
 class ClassAVC: UIViewController, ClassBVCDelegate {
     func changeBackroundColor(_ color: UIColor?) {
-        <#code#>
+        view.backgroundColor = color
     }
     
     
