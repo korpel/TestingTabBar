@@ -19,7 +19,8 @@ class ClassAVC: UIViewController, ClassBVCDelegate, UIApplicationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         let app = UIApplication.shared
-        let center = UNU
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.badge,.alert,.sound], completionHandler: {(granted,error) in })
         app.registerForRemoteNotifications()
         app.applicationIconBadgeNumber = 3
         
