@@ -13,6 +13,7 @@ class ClassAVC: UIViewController, ClassBVCDelegate, UIApplicationDelegate {
     func changeBackroundColor(_ color: UIColor?) {
         view.backgroundColor = color
     }
+    var someVar?
     
     
 
