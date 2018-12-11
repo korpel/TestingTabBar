@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import UserNotifications
 
-class ClassAVC: UIViewController, ClassBVCDelegate {
+class ClassAVC: UIViewController, ClassBVCDelegate, UIApplicationDelegate {
     func changeBackroundColor(_ color: UIColor?) {
         view.backgroundColor = color
     }
@@ -17,6 +18,11 @@ class ClassAVC: UIViewController, ClassBVCDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let app = UIApplication.shared
+        let center = UNU
+        app.registerForRemoteNotifications()
+        app.applicationIconBadgeNumber = 3
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
